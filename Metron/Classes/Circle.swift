@@ -1,5 +1,7 @@
 import CoreGraphics
 
+public typealias CircleIntersections = (first: CGPoint, second: CGPoint)
+
 /**
  *  A `Circle` represented by a center and a radius.
  */
@@ -51,6 +53,23 @@ public extension Circle {
     /// - returns: The bounding square for this circle.
     public var square: Square {
         return Square(origin: CGPoint(x: minX, y: minY), edges: diameter)
+    }
+    
+    /// - returns: Two intersection points of overlapping circles.
+    public func intersections(with secondCircle: Circle) -> CircleIntersections {
+        let distance = center.distance(to: secondCircle.center)
+        let angle = ((radius * radius) - (secondCircle.radius * secondCircle.radius) + (distance * distance)) / (2 * distance)
+        let height = sqrt((radius * radius) - (angle * angle))
+        
+        let point = (((secondCircle.center - center) * (angle / distance)).point + center).point
+        
+        var intersections: CircleIntersections = (.zero, .zero)
+        intersections.first.x = point.x + height * (secondCircle.center.y - center.y) / distance
+        intersections.first.y = point.y - height * (secondCircle.center.x - center.x) / distance
+        intersections.second.x = point.x - height * (secondCircle.center.y - center.y) / distance
+        intersections.second.y = point.y + height * (secondCircle.center.x - center.x) / distance
+        
+        return intersections
     }
 }
 
