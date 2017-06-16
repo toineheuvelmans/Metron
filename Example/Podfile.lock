@@ -1,0 +1,19 @@
+PODS:
+  - Metron (0.1.0)
+  - SwiftHamcrest (1.0.0)
+
+DEPENDENCIES:
+  - Metron (from `../`)
+  - SwiftHamcrest (~> 1.0.0)
+
+EXTERNAL SOURCES:
+  Metron:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Metron: 37dc01abbe8a9f6c4918f2be11fa54454b99f096
+  SwiftHamcrest: c08689aaa05168b346dbb6791a717183cdd66a25
+
+PODFILE CHECKSUM: 4a4fb47c1573cd9ca86040be353c7904b85ecbfd
+
+COCOAPODS: 1.2.0

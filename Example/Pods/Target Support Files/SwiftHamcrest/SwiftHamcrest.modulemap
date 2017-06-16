@@ -1,0 +1,6 @@
+framework module Hamcrest {
+  umbrella header "SwiftHamcrest-umbrella.h"
+
+  export *
+  module * { export * }
+}

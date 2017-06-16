@@ -1,0 +1,6 @@
+framework module Metron {
+  umbrella header "Metron-umbrella.h"
+
+  export *
+  module * { export * }
+}
