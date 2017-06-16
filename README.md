@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Metron.svg?style=flat)](http://cocoapods.org/pods/Metron)
 [![License](https://img.shields.io/cocoapods/l/Metron.svg?style=flat)](http://cocoapods.org/pods/Metron)
 [![Platform](https://img.shields.io/cocoapods/p/Metron.svg?style=flat)](http://cocoapods.org/pods/Metron)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![license](https://img.shields.io/github/license/Touchwonders/transition.svg)](https://github.com/Touchwonders/Transition/blob/master/LICENSE)
 
 # Metron
 
