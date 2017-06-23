@@ -7,7 +7,7 @@
 
 # Metron
 
-_Gemeometry, simplified._
+_Geometry, simplified._
 
 Metron is a comprehensive collection of geometric functions and types that extend the 2D geometric primitives provided by CoreGraphics. Completely written in Swift, Metron allows you to express complex geometric calculations in very intuitive statements:
 
