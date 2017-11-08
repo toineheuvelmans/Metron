@@ -52,19 +52,19 @@ public extension Line {
 
     /// - returns: If the definition of this line is non-vertical, the slope of the line.
     public var slope: CGFloat? {
-        guard case .sloped(let s, _) = definition else { return nil }
+        guard case let .sloped(s, _) = definition else { return nil }
         return s
     }
     
     /// - returns: If the definition of this line is non-vertical, the y-intercept of the line.
     public var yIntercept: CGFloat? {
-        guard case .sloped(_, let y) = definition else { return nil }
+        guard case let .sloped(_, y) = definition else { return nil }
         return y
     }
     
     /// - returns: If the definition of this line is vertical, the x-position of the line.
     public var xPosition: CGFloat? {
-        guard case .vertical(let x) = definition else { return nil }
+        guard case let .vertical(x) = definition else { return nil }
         return x
     }
     
@@ -78,7 +78,7 @@ public extension Line {
     
     /// - returns: True if this line is horizontal (slope equals zero).
     public var isHorizontal: Bool {
-        if case .sloped(let slope, _) = definition {
+        if case let .sloped(slope, _) = definition {
             return slope == 0.0
         }
         return false
@@ -88,7 +88,7 @@ public extension Line {
     /// Will be nil for vertical lines.
     /// y = mx+b
     public func point(atX x: CGFloat) -> CGPoint? {
-        guard case .sloped(let slope, let yIntercept) = definition else { return nil }
+        guard case let .sloped(slope, yIntercept) = definition else { return nil }
         return CGPoint(x: x, y: slope * x + yIntercept)
     }
     
@@ -97,10 +97,10 @@ public extension Line {
     /// x = (y-b)/m
     public func point(atY y: CGFloat) -> CGPoint? {
         switch definition {
-        case .sloped(let slope, let yIntercept):
+        case let .sloped(slope, yIntercept):
             guard slope != 0 else { return nil }
             return CGPoint(x: (y - yIntercept) / slope, y: y)
-        case .vertical(let x):
+        case let .vertical(x):
             return CGPoint(x: x, y: y)
         }
     }
@@ -108,10 +108,10 @@ public extension Line {
     /// - returns: The value for x on this line where y is 0.
     public var xIntercept: CGFloat? {
         switch definition {
-        case .sloped(let slope, let yIntercept):
+        case let .sloped(slope, yIntercept):
             guard slope != 0 else { return nil }
             return -yIntercept / slope
-        case .vertical(let x):
+        case let .vertical(x):
             return x
         }
     }
@@ -137,17 +137,15 @@ public extension Line {
     /// Will be nil for parallel lines.
     public func intersection(with line: Line) -> CGPoint? {
         switch (self.definition, line.definition) {
-        case (.sloped(let slope1, let yIntercept1),
-              .sloped(let slope2, let yIntercept2)):
+        case let (.sloped(slope1, yIntercept1),
+                  .sloped(slope2, yIntercept2)):
             let dSlope = slope1 - slope2
             guard dSlope != 0.0 else { return nil } // parallel
             return point(atX: (yIntercept2 - yIntercept1) / dSlope)
-        case (.vertical(let x),
-              .sloped(let slope, let yIntercept)),
-             (.sloped(let slope, let yIntercept),
-              .vertical(let x)):
+        case let (.vertical(x), .sloped(slope, yIntercept)),
+             let (.sloped(slope, yIntercept), .vertical(x)):
             return CGPoint(x: x, y: slope * x + yIntercept)
-        case (.vertical(_), .vertical(_)): return nil
+        default: return nil
         }
     }
     
@@ -169,10 +167,9 @@ public extension Line {
     /// equal slopes.
     public func isParallel(to line: Line) -> Bool {
         switch (self.definition, line.definition) {
-        case (.sloped(let slope1, _),
-              .sloped(let slope2, _)):
+        case let (.sloped(slope1, _), .sloped(slope2, _)):
             return slope1 == slope2
-        case (.vertical(_), .vertical(_)): return true
+        case (.vertical, .vertical): return true
         default: return false
         }
     }
@@ -181,7 +178,7 @@ public extension Line {
     /// through the provided point.
     public func perpendicular(through point: CGPoint) -> Line {
         switch definition {
-        case .sloped(let slope, _):
+        case let .sloped(slope, _):
             if slope == 0.0 {
                 return Line(verticalAtX: point.x)
             } else {
@@ -189,7 +186,7 @@ public extension Line {
                 let b = -(m * point.x - point.y)
                 return Line(slope: m, yIntercept: b)
             }
-        case .vertical(_):
+        case .vertical:
             return Line(slope: 0.0, yIntercept: point.y)
         }
     }
@@ -200,12 +197,10 @@ public extension Line {
 extension Line.Definition : Equatable {
     public static func ==(lhs: Line.Definition, rhs: Line.Definition) -> Bool {
         switch (lhs, rhs) {
-            case (.sloped(let lhsSlope, let lhsYIntercept),
-                  .sloped(let rhsSlope, let rhsYIntercept)):
+            case let (.sloped(lhsSlope, lhsYIntercept), .sloped(rhsSlope, rhsYIntercept)):
                 return lhsSlope == rhsSlope &&
                        lhsYIntercept == rhsYIntercept
-            case (.vertical(let lhsX),
-                  .vertical(let rhsX)):
+            case let (.vertical(lhsX), .vertical(rhsX)):
                 return lhsX == rhsX
             default: return false
         }
@@ -223,8 +218,8 @@ extension Line : Equatable {
 extension Line : CustomDebugStringConvertible {
     public var debugDescription: String {
         switch definition {
-        case .sloped(let slope, let yIntercept): return "Line {slope: \(slope), yIntercept: \(yIntercept)}"
-        case .vertical(let x): return "Line {verticalAtX: \(x)}"
+        case let .sloped(slope, yIntercept): return "Line {slope: \(slope), yIntercept: \(yIntercept)}"
+        case let .vertical(x): return "Line {verticalAtX: \(x)}"
         }
     }
 }
