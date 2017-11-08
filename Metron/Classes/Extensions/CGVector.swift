@@ -89,11 +89,3 @@ public extension CGAffineTransform {
         return translatedBy(x: vector.dx, y: vector.dy)
     }
 }
-
-// MARK: CustomDebugStringConvertible
-
-extension CGVector : CustomDebugStringConvertible {
-    public var debugDescription: String {
-        return "{dx: \(dx), dy: \(dy)}"
-    }
-}

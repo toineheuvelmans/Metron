@@ -230,7 +230,7 @@ extension Collection where Iterator.Element == CGPoint, Index == Int {
         let sortValue: (CGPoint) -> CGFloat = { p in
             return p.polarAngle(reference: startPoint).radians
         }
-        let sorted = self.sorted { sortValue($0.0) < sortValue($0.1) }
+        let sorted = self.sorted { sortValue($0) < sortValue($1)}
         
         //  pre-populate
         var hullPoints: [CGPoint] = Array(sorted[0...2])

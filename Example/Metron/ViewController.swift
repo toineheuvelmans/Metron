@@ -115,7 +115,7 @@ class ViewController: UIViewController {
         return pgr
     }()
     
-    func updatePinch(_ pinchGestureRecognizer: UIPinchGestureRecognizer) {
+    @objc func updatePinch(_ pinchGestureRecognizer: UIPinchGestureRecognizer) {
         switch pinchGestureRecognizer.state {
         case .began:
             let center = pinchGestureRecognizer.location(in: view)
