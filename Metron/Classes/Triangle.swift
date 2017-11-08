@@ -244,7 +244,7 @@ public extension Triangle {
     
     /// The interscetion of each side's perpendicular bisector
     /// (a perpendicular line drawn from the midpoint of a side).
-    public var cicrumcenter: CGPoint {
+    public var circumcenter: CGPoint {
         let perpendicularBisectorA = sideA.line.perpendicular(through: sideA.midpoint)
         let perpendicularBisectorB = sideB.line.perpendicular(through: sideB.midpoint)
         return perpendicularBisectorA.intersection(with: perpendicularBisectorB)!

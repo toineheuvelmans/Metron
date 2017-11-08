@@ -63,7 +63,7 @@ triangle1.isObtuse      // True if one angle is more than 90°.
 
 /// Centers:
 triangle1.centroid
-triangle1.cicrumcenter
+triangle1.circumcenter
 triangle1.incenter
 triangle1.orthocenter
 
