@@ -3,7 +3,7 @@ import UIKit
 
 // MARK: Playgrounds
 
-extension Drawable {
+public extension Metron.Drawable {
     public var customPlaygroundQuickLook: PlaygroundQuickLook {
         if let path = self.path {
             return .bezierPath(UIBezierPath(cgPath: path))
@@ -16,10 +16,10 @@ extension Drawable {
 //extension Circle : CustomPlaygroundQuickLookable {}
 //extension Triangle : CustomPlaygroundQuickLookable {}
 //extension Square : CustomPlaygroundQuickLookable {}
-extension Polygon : CustomPlaygroundQuickLookable {}
+extension Metron.Polygon : CustomPlaygroundQuickLookable {}
 
 
-extension Int {
+public extension Int {
     public func `do`(_ block: () -> ()) {
         guard self > 0 else { return }
         for _ in 0..<self {
