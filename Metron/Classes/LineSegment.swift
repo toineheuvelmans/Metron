@@ -53,7 +53,7 @@ public extension LineSegment {
     
     /// - returns: true when the provided point is on this lineSegment's line and 
     /// between its points.
-    /// - note: An error margin of 1e-14 is allowed.
+    /// - note: An error margin of 1e-12 is allowed.
     public func contains(_ point: CGPoint) -> Bool {
         if isVertical {
             return point.x == minX && point.y.between(lower: a.y, upper: b.y)
