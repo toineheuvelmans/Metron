@@ -22,7 +22,7 @@
  initialize these types and the properties that can be
  derived from them.
  
- NOTE: You will need to build the project first before Metron is available in these playgrounds. Ensure that you have a Simulator-type device selected when building.
+ NOTE: Run pod install in the Example folder and then open the Xcode workspace. You will need to build the project first before Metron is available in these playgrounds. Ensure that you have a Simulator-type device selected when building.
  
 ----
 */

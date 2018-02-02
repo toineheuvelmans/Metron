@@ -79,7 +79,7 @@ public extension Line {
     /// - returns: True if this line is horizontal (slope equals zero).
     public var isHorizontal: Bool {
         if case let .sloped(slope, _) = definition {
-            return slope == 0.0
+            return abs(slope) == 0.0
         }
         return false
     }
@@ -127,10 +127,10 @@ public extension Line {
     }
     
     /// - returns: True when the provided point is on this `Line`.
-    /// - note: An error margin of 1e-14 is allowed.
+    /// - note: An error margin of 1e-12 is allowed.
     public func contains(_ point: CGPoint) -> Bool {
         guard let pointAtX = self.point(atX: point.x) else { return false }
-        return point.distance(to: pointAtX) <= 1e-14
+        return point.distance(to: pointAtX) <= 1e-12
     }
     
     /// - returns: The intersection of this `Line` with the provided `Line`.
