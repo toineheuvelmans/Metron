@@ -151,7 +151,7 @@ class GridView : UIView {
     
     // MARK: - Pan / Pinch
     
-    func updateTranslation(_ panGestureRecognizer: UIPanGestureRecognizer) {
+    @objc func updateTranslation(_ panGestureRecognizer: UIPanGestureRecognizer) {
         switch panGestureRecognizer.state {
         case .changed:
             if isUserInteractionEnabled {
@@ -164,7 +164,7 @@ class GridView : UIView {
         }
     }
  
-    func updateScale(_ pinchGestureRecognizer: UIPinchGestureRecognizer) {
+    @objc func updateScale(_ pinchGestureRecognizer: UIPinchGestureRecognizer) {
         switch pinchGestureRecognizer.state {
         case .changed:
             if isUserInteractionEnabled {
