@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Metron'
   s.version          = '1.0.1'
+  s.swift_version    = '4.2'
   s.summary          = 'Gemeometry, simplified.'
 
   s.description      = <<-DESC
