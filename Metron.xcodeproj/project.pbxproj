@@ -213,7 +213,8 @@
 				BA74CE871EF18C8700CC414C /* Protocols */,
 				BA74CE8F1EF18C8700CC414C /* Classes */,
 			);
-			path = Sources;
+			name = Sources;
+			path = Metron;
 			sourceTree = "<group>";
 		};
 		BA74CE871EF18C8700CC414C /* Protocols */ = {
