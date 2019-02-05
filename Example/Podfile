@@ -1,12 +1,14 @@
 use_frameworks!
 
+platform :ios, '12'
+
 target 'Metron_Example' do
-    pod 'Metron', :path => '../'
+  pod 'Metron', :path => '../'
 end
 
 target 'Metron_Tests' do
-    pod 'Metron', :path => '../'
-    pod 'SwiftHamcrest', '~> 1.0.0'
+  pod 'Metron', :path => '../'
+  pod 'SwiftHamcrest', '~> 2.0'
 end
 
 post_install do |installer|

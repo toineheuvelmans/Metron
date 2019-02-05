@@ -3,8 +3,7 @@ public func anything<T>() -> Matcher<T> {
 }
 
 public func sameInstance<T: AnyObject>(_ expectedValue: T) -> Matcher<T> {
-    return Matcher("same instance as \(describeAddress(expectedValue))") {
-        (value: T) -> MatchResult in
+    return Matcher("same instance as \(describeAddress(expectedValue))") { (value: T) -> MatchResult in
         value === expectedValue ? .match : .mismatch(describeAddress(value))
     }
 }
@@ -12,8 +11,7 @@ public func sameInstance<T: AnyObject>(_ expectedValue: T) -> Matcher<T> {
 // MARK: is
 
 public func `is`<T>(_ matcher: Matcher<T>) -> Matcher<T> {
-    return Matcher("is " + matcher.description) {
-        (value: T) -> MatchResult in
+    return Matcher("is " + matcher.description) { (value: T) -> MatchResult in
         return matcher.matches(value)
     }
 }
@@ -37,8 +35,7 @@ public func present<T>() -> Matcher<Optional<T>> {
 }
 
 public func presentAnd<T>(_ matcher: Matcher<T>) -> Matcher<Optional<T>> {
-    return Matcher("present and \(matcher.description)") {
-        (value: T?) -> MatchResult in
+    return Matcher("present and \(matcher.description)") { (value: T?) -> MatchResult in
         if let unwrappedValue = value {
             return matcher.matches(unwrappedValue)
         } else {
@@ -59,8 +56,7 @@ public func instanceOf<T: Any>(_ expectedType: T.Type, and matcher: Matcher<T>) 
 }
 
 public func instanceOfAnd<T: Any>(_ matcher: Matcher<T>) -> Matcher<Any> {
-    return Matcher("instance of \(T.self) and \(matcher.description)") {
-        (value: Any) -> MatchResult in
+    return Matcher("instance of \(T.self) and \(matcher.description)") { (value: Any) -> MatchResult in
         if let value = value as? T {
             return matcher.matches(value)
         } else {

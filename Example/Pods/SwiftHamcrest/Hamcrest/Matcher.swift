@@ -1,5 +1,4 @@
 public struct Matcher<T> {
-
     public let description: String
     let f: (T) -> MatchResult
 

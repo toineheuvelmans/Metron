@@ -8,8 +8,8 @@ import XCTest
 public var HamcrestReportFunction: (_: String, _ file: StaticString, _ line: UInt) -> () = HamcrestDefaultReportFunction
 public let HamcrestDefaultReportFunction =
     isPlayground()
-        ? {(message, file, line) in}
-        : {(message, file, line) in XCTFail(message, file: file, line: line)}
+        ? {message, file, line in}
+        : {message, file, line in XCTFail(message, file: file, line: line)}
 
 // MARK: helpers
 
@@ -95,7 +95,6 @@ func isPlayground() -> Bool {
 
 func reportResult(_ possibleResult: String?, file: StaticString = #file, line: UInt = #line)
     -> String {
-
     if let result = possibleResult {
         HamcrestReportFunction(result, file, line)
         return result

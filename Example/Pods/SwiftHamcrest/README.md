@@ -5,13 +5,15 @@ Hamcrest gives you advanced matchers with better error messages for your Swift u
 
 Hamcrest was originally written in Java and is available for many [languages](http://hamcrest.org).
 
-![Swift 3.0](https://img.shields.io/badge/Swift-3.0-lightgrey.svg)
+![Swift 4.2](https://img.shields.io/badge/Swift-4.2-lightgrey.svg)
 ![OS X ≥ 10.9](https://img.shields.io/badge/OS%20X-≥%2010.9-lightgrey.svg)
 ![iOS ≥ 7.0](https://img.shields.io/badge/iOS%20-≥%207.0-lightgrey.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftHamcrest.svg)
 
 [![Build Status](https://travis-ci.org/nschum/SwiftHamcrest.svg?branch=master)](https://travis-ci.org/nschum/SwiftHamcrest)
+[![Coverage Status](https://coveralls.io/repos/github/nschum/SwiftHamcrest/badge.svg?branch=master)](https://coveralls.io/github/nschum/SwiftHamcrest?branch=master)
+
 
 Tutorial
 --------
@@ -346,7 +348,7 @@ Integrate SwiftHamcrest using a Podfile similar to this:
 use_frameworks!
 
 target 'HamcrestDemoTests', :exclusive => true do
-  pod 'SwiftHamcrest', '~> 1.0.0'
+  pod 'SwiftHamcrest', '~> 2.1.0'
 end
 ```
 

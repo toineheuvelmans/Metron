@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C449C39B83CEFD9D400D226 /* Pods_Metron_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846B8FC24CA9FF644599EB36 /* Pods_Metron_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* PolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* PolygonTests.swift */; };
-		92E26EA3E0245C395DA55AD3 /* Pods_Metron_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC997EDDE870CFAB6CF914CB /* Pods_Metron_Tests.framework */; };
 		BA3FD7361E5A27F00027925B /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3FD7351E5A27F00027925B /* GridView.swift */; };
 		BA83D1471E7F18D200790AC2 /* DrawableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83D1461E7F18D200790AC2 /* DrawableSource.swift */; };
 		BA83D1481E7F18D200790AC2 /* DrawableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83D1461E7F18D200790AC2 /* DrawableSource.swift */; };
 		BA83F0B91ED5DB31001A91A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA83F0B81ED5DB31001A91A3 /* Images.xcassets */; };
-		EE0D7C948A1C7BA71D83BCC7 /* Pods_Metron_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D9957DAA69411FFDBF8E5F /* Pods_Metron_Example.framework */; };
+		D2995F7900790B641546F11E /* Pods_Metron_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AF051C55D19C976E322CCA /* Pods_Metron_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08D9957DAA69411FFDBF8E5F /* Pods_Metron_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metron_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A853D67E92BF70F956B389F /* Pods-Metron_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metron_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metron_Example/Pods-Metron_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		13B0F6856B64A39C4F9C922B /* Pods-Metron_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metron_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		39B2134E6D9E1AA153F005FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -46,13 +45,14 @@
 		607FACE51AFB9204008FA782 /* Metron_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Metron_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* PolygonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonTests.swift; sourceTree = "<group>"; };
+		77AF051C55D19C976E322CCA /* Pods_Metron_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metron_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		846B8FC24CA9FF644599EB36 /* Pods_Metron_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metron_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC534AF62E2C372C9CFFA176 /* Pods-Metron_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metron_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metron_Example/Pods-Metron_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA3FD7351E5A27F00027925B /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		BA48D7231E97932C00C27999 /* Metron.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Metron.playground; sourceTree = "<group>"; };
 		BA753B1E1E7C26250011D43F /* Metron.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Metron.podspec; path = ../Metron.podspec; sourceTree = "<group>"; };
 		BA83D1461E7F18D200790AC2 /* DrawableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableSource.swift; sourceTree = "<group>"; };
 		BA83F0B81ED5DB31001A91A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Metron_Example/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		DC997EDDE870CFAB6CF914CB /* Pods_Metron_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metron_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0D7C948A1C7BA71D83BCC7 /* Pods_Metron_Example.framework in Frameworks */,
+				4C449C39B83CEFD9D400D226 /* Pods_Metron_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E26EA3E0245C395DA55AD3 /* Pods_Metron_Tests.framework in Frameworks */,
+				D2995F7900790B641546F11E /* Pods_Metron_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +162,8 @@
 		6D270BEFC29F61026FDFC50B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08D9957DAA69411FFDBF8E5F /* Pods_Metron_Example.framework */,
-				DC997EDDE870CFAB6CF914CB /* Pods_Metron_Tests.framework */,
+				846B8FC24CA9FF644599EB36 /* Pods_Metron_Example.framework */,
+				77AF051C55D19C976E322CCA /* Pods_Metron_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,8 +179,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3BA87A9E79433E4D7BB1E63A /* [CP] Embed Pods Frameworks */,
-				0C029C1D394D8676C8F16728 /* [CP] Copy Pods Resources */,
+				1B4D271ACC9A4500BCC1F369 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,8 +198,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				131EC69E80580107BFB103DB /* [CP] Embed Pods Frameworks */,
-				2A78E19E659CA7BBDE17AEDA /* [CP] Copy Pods Resources */,
+				B582C91FE53ECBAC3AFCD052 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,19 +217,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = LQ449R4NTB;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = LQ449R4NTB;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -295,54 +292,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0C029C1D394D8676C8F16728 /* [CP] Copy Pods Resources */ = {
+		1B4D271ACC9A4500BCC1F369 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metron_Example/Pods-Metron_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		131EC69E80580107BFB103DB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Metron_Example/Pods-Metron_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Metron/Metron.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftHamcrest/Hamcrest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Metron.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hamcrest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2A78E19E659CA7BBDE17AEDA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metron_Example/Pods-Metron_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		34D122912C2D0242A0B5A690 /* [CP] Check Pods Manifest.lock */ = {
@@ -363,22 +332,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3BA87A9E79433E4D7BB1E63A /* [CP] Embed Pods Frameworks */ = {
+		B582C91FE53ECBAC3AFCD052 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Metron_Example/Pods-Metron_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Metron/Metron.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHamcrest/Hamcrest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Metron.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hamcrest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metron_Example/Pods-Metron_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -447,12 +422,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -484,6 +461,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -500,12 +478,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -529,6 +509,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -545,7 +526,6 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = me.algorithmic.metron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -562,7 +542,6 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = me.algorithmic.metron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -571,8 +550,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4068110EB74E61C27E71EE4E /* Pods-Metron_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = LQ449R4NTB;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -586,8 +563,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -595,8 +570,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13B0F6856B64A39C4F9C922B /* Pods-Metron_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -606,8 +579,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

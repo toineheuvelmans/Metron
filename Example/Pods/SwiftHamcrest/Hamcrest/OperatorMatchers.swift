@@ -9,8 +9,9 @@ public struct MatchResultDescription {
     init(result: String?) {
         self.result = result
     }
+
     init<T>(value: @autoclosure () -> T, matcher: Matcher<T>) {
-        self.result = applyMatcher(matcher, toValue: value)
+        result = applyMatcher(matcher, toValue: value)
     }
 }
 
@@ -38,9 +39,7 @@ public func <= <T: Comparable>(value: T, expectedValue: T) -> MatchResultDescrip
     return MatchResultDescription(value: value, matcher: lessThanOrEqualTo(expectedValue))
 }
 
-public func && (lhs: MatchResultDescription, rhs: MatchResultDescription)
-    -> MatchResultDescription {
-
+public func && (lhs: MatchResultDescription, rhs: MatchResultDescription) -> MatchResultDescription {
     switch (lhs.result, rhs.result) {
     case (nil, nil):
         return MatchResultDescription(result: .none)

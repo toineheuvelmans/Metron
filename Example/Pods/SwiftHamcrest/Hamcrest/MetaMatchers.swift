@@ -15,14 +15,12 @@ public func allOf<T>(_ matchers: Matcher<T>...) -> Matcher<T> {
 }
 
 public func allOf<S: Sequence, T>(_ matchers: S) -> Matcher<T> where S.Iterator.Element == Matcher<T> {
-    return Matcher(joinMatcherDescriptions(matchers)) {
-        (value: T) -> MatchResult in
+    return Matcher(joinMatcherDescriptions(matchers)) { (value: T) -> MatchResult in
         var mismatchDescriptions: [String?] = []
         for matcher in matchers {
-            switch delegateMatching(value, matcher, {
-                (mismatchDescription: String?) -> String? in
+            switch delegateMatching(value, matcher, { (mismatchDescription: String?) -> String? in
                 "mismatch: \(matcher.description)"
-                    + (mismatchDescription.map{" (\($0))"} ?? "")
+                    + (mismatchDescription.map {" (\($0))"} ?? "")
             }) {
             case let .mismatch(mismatchDescription):
                 mismatchDescriptions.append(mismatchDescription)
@@ -43,8 +41,7 @@ public func anyOf<T>(_ matchers: Matcher<T>...) -> Matcher<T> {
 }
 
 public func anyOf<S: Sequence, T>(_ matchers: S) -> Matcher<T> where S.Iterator.Element == Matcher<T> {
-    return Matcher(joinMatcherDescriptions(matchers, prefix: "any of")) {
-        (value: T) -> MatchResult in
+    return Matcher(joinMatcherDescriptions(matchers, prefix: "any of")) { (value: T) -> MatchResult in
         let matchedMatchers = matchers.filter {$0.matches(value).boolValue}
         return MatchResult(!matchedMatchers.isEmpty)
     }

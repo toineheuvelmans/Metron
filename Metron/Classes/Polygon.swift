@@ -198,7 +198,7 @@ extension Polygon : Shape {
         guard boundingRect.contains(point) else { return false }
         //  Raycasting
         let lineThroughPoint = Line(angle: Angle(0.0), through: point)
-        let intersectionsBefore = lineSegments.flatMap { $0.intersection(with: lineThroughPoint) }.filter { $0.x < point.x }
+        let intersectionsBefore = lineSegments.compactMap { $0.intersection(with: lineThroughPoint) }.filter { $0.x < point.x }
         return intersectionsBefore.count % 2 == 1
     }
 }

@@ -3,8 +3,7 @@ public func equalTo<T: Equatable>(_ expectedValue: T) -> Matcher<T> {
 }
 
 public func closeTo(_ expectedValue: Double, _ delta: Double) -> Matcher<Double> {
-    return Matcher("within \(delta) of \(expectedValue)") {
-        (value: Double) -> MatchResult in
+    return Matcher("within \(delta) of \(expectedValue)") { (value: Double) -> MatchResult in
         let actual = abs(value - expectedValue)
         return MatchResult(actual < delta, "difference of \(actual)")
     }

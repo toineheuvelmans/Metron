@@ -122,7 +122,7 @@ class GridView : UIView {
         if hasSelectedDrawable {
             //  fill
             ctx.saveGState()
-            drawableSource?.drawables.flatMap { $0.selected ? $0.shape.path : nil }.forEach { ctx.addPath($0) }
+            drawableSource?.drawables.compactMap { $0.selected ? $0.shape.path : nil }.forEach { ctx.addPath($0) }
             ctx.clip()
             
             let shift = s
@@ -140,7 +140,7 @@ class GridView : UIView {
         
         //  lines
         ctx.saveGState()
-        drawableSource?.drawables.flatMap { $0.shape.path }.forEach { ctx.addPath($0) }
+        drawableSource?.drawables.compactMap { $0.shape.path }.forEach { ctx.addPath($0) }
         ctx.setLineWidth(3.0 * lineWidth)
         ctx.setStrokeColor(gridColor.withAlphaComponent(1.0).cgColor)
         ctx.drawPath(using: .stroke)

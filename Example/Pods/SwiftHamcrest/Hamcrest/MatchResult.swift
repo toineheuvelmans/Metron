@@ -1,5 +1,4 @@
 public enum MatchResult: ExpressibleByBooleanLiteral {
-
     case match
     case mismatch(String?)
 

@@ -7,517 +7,474 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00D0FC9D2D7C8D61E9EB3CCA66CC67AB /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F499FF79DBDBC8347A7303F7647333 /* General.swift */; };
-		0A7D2BE7B3E72AFBDCFC10B0AADA9B06 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98FD86DDDE8801355DAD45C3A295556 /* CGRect.swift */; };
-		21A54296F1EB11D40A0AA97504C28D58 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF434EAA5D93DBC27BE0486D540D675 /* MatchResult.swift */; };
-		347FA4F130A9CB7B6E3E809CFDA1CDAC /* OperatorMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2334B95370056BFC1A78980F4F6B88 /* OperatorMatchers.swift */; };
-		3581B66EED7C3D18988AC7BE74FF7753 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B247D8935765047B97316C41A961E /* CGSize.swift */; };
-		3A389A03F8800DB550F376B2847BFA69 /* Metron-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E34B25B70B6C2D433981E15325DD38C /* Metron-dummy.m */; };
-		3EF0D2CBDDBA1D1B7B96F0202F94935E /* Hamcrest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C4B61F9D1A8D7F33B82008ECF78AD /* Hamcrest.swift */; };
-		4160C6BCD19567EF48F137AD1A245443 /* CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2839A739FC4E065A1D3A1507E99B46A /* CGAffineTransform.swift */; };
-		43AE78547B8172A8C93B3F46685BB427 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F2E72913C8CF9EA0545C544CE1AE0 /* Side.swift */; };
-		49FFEADCEED790F27D69531AD4A40CAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
-		551D15512C96CC5B14D383693CD03DB8 /* CornerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF4C5352AFFA2F0356AF591BB2F3F4 /* CornerPosition.swift */; };
-		5A49584203CDA1B825B428594852DF6F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443C0C40A7262B83CBDC4DED2465D8E /* CGPoint.swift */; };
-		5D878256C56C4E6CAE74003BB9D79811 /* StringMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B5E4F58BAB06808759C87DC4D1176 /* StringMatchers.swift */; };
-		6757A5E29964F91DE4BACC83DF931C4F /* PolygonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42449FCB8563C9384129006BD7C375EE /* PolygonType.swift */; };
-		7A47E51CEBA279C9A5796B6A4A345588 /* MetaMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A73F270F07A696943EA436C94812A9 /* MetaMatchers.swift */; };
-		7CE472CA2C79D8CA392DC7ACA82D382E /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A618D7F0E9AD666B5791E97D656775 /* Square.swift */; };
-		881C5D51157AFBB7AA955426A0B0E730 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9CD90A07DB0A6D460FE8FA90FFA08 /* Line.swift */; };
-		8B366F70FA493EC7D3F0B5B336E87F5D /* ArithmeticMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890CA0E2D5308BB60BF93EEC7530AAEA /* ArithmeticMatchers.swift */; };
-		8B4DD97009437591FF290CD37DB3EAD4 /* Pods-Metron_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE416C75F25C6EB4683B16C7CF95816B /* Pods-Metron_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C1D25958A5413B8C82B79A29184BA4E /* BasicMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A248BE8CB1596C2EBFE4D2D4D350B /* BasicMatchers.swift */; };
-		8FBE265435CCD7A7AD34BCE131689FDA /* Pods-Metron_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E2132B23B9DD1838441E2283783465 /* Pods-Metron_Example-dummy.m */; };
-		984596675C20BF226CE416770F0DD048 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4788AE83E56DCAD048CB507D0666382 /* CoordinateSystem.swift */; };
-		9BC46EA3A25D8A1228882A7D4B6F3BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
-		A62E33DF63FFE4F7043FB03B3174713C /* CornerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25916E762D2636A02ED8FA0E7D093025 /* CornerType.swift */; };
-		A6461BE95ACEECE38CC4AAD93BAA3ED7 /* SwiftHamcrest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDD767BE5AF62C391F287C8AA6AB1D3 /* SwiftHamcrest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6A761DD95C786BBFD05C6ECC4547458 /* Pods-Metron_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BB7D3E0F5F0C034CAC412AF54907A0 /* Pods-Metron_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA3DE610011F8A60C4893EAA9C14D342 /* Opposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A949ADC1300831DCC9A6732BACD1F /* Opposable.swift */; };
-		AB72927636E71791DA89FD33A0035C1D /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36105DF30F12473B4B862E5DB5262E22 /* Circle.swift */; };
-		B2B62BF63045F5CD23F9873319C5D360 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12AB40CE95DB328AD345E4C7D03872 /* CGVector.swift */; };
-		B5EB4F4673FC5C8C5BF8ADFF981ECB22 /* ReflectionMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B039B380B935CDEC8B216A0D763A6 /* ReflectionMatchers.swift */; };
-		B90ED5F914C9F99BFAFF3E932FEFE967 /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042E1BA29D23C59349814E7BDB004AD /* LineSegment.swift */; };
-		BAF36FC757D2075FB4B077B5633BF8C0 /* EdgeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E319AAE19699CF4000BB99B60BF06F /* EdgeType.swift */; };
-		C055822F491D99FD6A4D59DDA6322BF9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */; };
-		C16E253E3FD91BAD0598E553FCF87800 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7DA11A860C48BD0312531279CEE7E /* Angle.swift */; };
-		C1E63AEF58955451A02DC5658AB65C62 /* Metron-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF510FD8E9F3C5262C85A6DAB0C0EA1 /* Metron-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5BB3D5D5EF0702031683AF9B2CCBFFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
-		C7E52995A6E0EF2C4502A499F59E8268 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3DA0EA304A1F022D9C31C76DCFEF6 /* Shape.swift */; };
-		CB9202472ACE909CACF1A310BEECF49A /* DictionaryMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BF4700AA63BB3671DD7FB9BEC631A /* DictionaryMatchers.swift */; };
-		CBA30FABC2729AB9DCFC17FBC14FBA39 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F882575430EE6ECCCD3F0FE54031BB1 /* Matcher.swift */; };
-		CCA5DA1D8D0C4109E81894BB6DC727D1 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88816AA3D21D2A075B2756288D5CD2F0 /* Corner.swift */; };
-		D0DCCDCA76634FF1108A522D2CA856FE /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00825CD5CD69CEC4F633336DC02635BB /* Descriptions.swift */; };
-		D724370AAFFFF935FF7FAF0B416C034F /* SwiftHamcrest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AD3C3CCFDD5A90487DE8CAA6EB97EC /* SwiftHamcrest-dummy.m */; };
-		DB71DC7D229BCC5FF00D8CF5859B1EB7 /* SequenceMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38260942F8D373DFA849AF378C7C5D00 /* SequenceMatchers.swift */; };
-		E35A105A91962BCD334F9C391C1D1EF5 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556987EFF3CAFC5B0577FDB7DBF3BDF /* Drawable.swift */; };
-		E7676E377E62F4C96168606CAF57020B /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C13BAF2E3A66C1AB0D63EAD1579279 /* Rotatable.swift */; };
-		EDFDD7B2A464B50DD82019C243E61C0B /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F921B187CF7CA74C2470819749761 /* Polygon.swift */; };
-		EE4983EBEB6916A2D7A067402FE9E2E4 /* Pods-Metron_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B740527E4D35477B604C743EF2FC4 /* Pods-Metron_Tests-dummy.m */; };
-		EFC25F308962EF4C83EF01B6EBC512C6 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA2B14097F74025990A34ECE19F5921 /* Triangle.swift */; };
-		FB709C1824AD52A7E5DF3E79CF0E3751 /* CGRectEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6F19635D721495ED7AAD62820AB8E /* CGRectEdge.swift */; };
-		FE0029C57407C93BBB17252CE5E6C570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
+		029272AF739D6F28B57406CBBFAA6ABF /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971B8A86CE3E46D915CEA6E3C2530FF0 /* Drawable.swift */; };
+		0EA6B49D1C5BDF963998BBC1A1AA6CB1 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3A75ECB1C2A1583921F7A4206C3FE /* CGVector.swift */; };
+		1A69A5E4D2946C71236AD49D36F1FB48 /* Hamcrest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F255976DE91BA0BEE7438B295E682D /* Hamcrest.swift */; };
+		1BFDBE945D43FC4CF77025BFEB0A28D4 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E58A1EC79452B4A4D75903FDBB47F /* Triangle.swift */; };
+		1C60058317196E2FDD2440679EE99585 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC978C77422E552FB14FA99AC9B759A /* CGPoint.swift */; };
+		1CECEC05F861E12CF508DFEF5AE8714C /* CornerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C44D1A8E15785984B28729612B931A /* CornerType.swift */; };
+		1E5A4012484E8AD76C9E4FE82C7290A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */; };
+		20A677B1DC5B00B6964E3F4536C9CF64 /* CGRectEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9F4750B227B8DECE1A542DC7C402 /* CGRectEdge.swift */; };
+		2160E94517632469C9B4218C1FD1446E /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF1A38A2275928CA3D808C76BD2A16 /* Matcher.swift */; };
+		24669D7F1EEAF4123B5FE363FFC20370 /* Pods-Metron_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AB528A243ADBC093B0505423F48455 /* Pods-Metron_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		274B5F7780C697AC6A869563A81799A4 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F5BE5252ACB03AABCBF00000B7211 /* CGSize.swift */; };
+		27E2AA85CE8E429893E977855B9C3342 /* OperatorMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2749DF0BDD945D908D2EC45B6FD9C0 /* OperatorMatchers.swift */; };
+		28AC53FDED1BB01A56F3549B86308ED7 /* CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6645C7F346967DC77C1515D7A8B980 /* CGAffineTransform.swift */; };
+		2A924CCC7DB1712DD36C9F38276ABA99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */; };
+		2C68EE85398598FBB307855B237329D5 /* PolygonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2D12C91E9C3FDBB4088AC8BB7ADBD /* PolygonType.swift */; };
+		2DBA8BD2ED5B5081D967FD95F551773E /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF9C8E6AB3D4FFC21DC750A8A013DBD /* Circle.swift */; };
+		325AE7198D709824D503FB42DF8F3888 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3599E00AFD25A08F984489BF99E156 /* CGRect.swift */; };
+		39AF7DD43ED1EB6BBCCE686E0E582266 /* Metron-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 989C716686B526AD83A11076B5F43F57 /* Metron-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CEA3A6EB1A45040812B8AA02244E38D /* BasicMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523D52C82815D4107BA5C344FC5EF3E /* BasicMatchers.swift */; };
+		4535DCB6C1E1190D06D54B92D41A63B6 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB257D32DF11AD3ABABD9EC6F076FB /* Corner.swift */; };
+		4905F59E18E44E5ACD59EC678C2143FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */; };
+		4F3B85D91C54796C48B62E02F9CFB92F /* ReflectionMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F24909931D349717A7F0EE3430EF2 /* ReflectionMatchers.swift */; };
+		51FF93E9A2089C7D4E753E90BB336D4D /* SwiftHamcrest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA2DD083FB2F78E9CA64A0F0CD650A /* SwiftHamcrest-dummy.m */; };
+		569BA9BF2F80C0EFE63020D9ED7ED6DC /* ArithmeticMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63A7E92329D6229448F55ED69D11A3 /* ArithmeticMatchers.swift */; };
+		646FE2A8A58355B6A91A1C79158EDE36 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C533195EFC14942EC61D268879A14F01 /* MatchResult.swift */; };
+		64AFE3EF7A6F76D2D3BF4C2AC5DCA1DB /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCED7FA8D2C4B496E44489E30A4D87C /* LineSegment.swift */; };
+		65953FDD9432680C3706C5398CAF5387 /* Opposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DDBFED8FBBA336CA6BE392C5F5B075 /* Opposable.swift */; };
+		6C2A3B2490AD34B9D1F7A22056ED6B7A /* MetaMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203149F74AAF1C3E80E24AE68599872 /* MetaMatchers.swift */; };
+		725BAA3235F0BEFE86D86B8C00BD3506 /* Pods-Metron_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C97FA0372A57A46093DDB89B7DB3F91 /* Pods-Metron_Example-dummy.m */; };
+		80865988ADBB240CAC9724E345F3DA37 /* SequenceMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55568EB23A5D70EAB75E10F1D543410 /* SequenceMatchers.swift */; };
+		852F512606E08501D61F25BA2730B940 /* Metron-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B8D4FB902C4CA8E5923AA7CA5E57C /* Metron-dummy.m */; };
+		87501573A570955B07BC5D7E67C341A7 /* SwiftHamcrest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E5350B5610C5D6BA45229FE3BCC163 /* SwiftHamcrest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C9234BBBE133E628F089F5FEAE6D69D /* EdgeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5556C284BF475169A7BC55DE6A7FA3CE /* EdgeType.swift */; };
+		9DCDE5686B31704EB8CF50C721A9AE8A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C956AC031CD6CA9FD963AEA871266E4 /* Line.swift */; };
+		AA039A9B750EABD9D0647D78295D6031 /* Pods-Metron_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7414849F321B9B5D71BBFC3DA614EE49 /* Pods-Metron_Tests-dummy.m */; };
+		AC7538DBC86D6D8AD829830D3233E78D /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D17D6A601D0E58F4FA1D4452FCB6CA /* Side.swift */; };
+		AD38A03D91F114DD1FA23C4CE39FCE03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD98DB8C1AA8E2390412D61DB64864D /* XCTest.framework */; };
+		B431A4F870F965642CC32976ED623B21 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A547A5A7029F9F39A874DAA45D7C5 /* Angle.swift */; };
+		B6D652C08E8DD541C4CB7B55BE26FE1A /* StringMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817609959C1514517D41D0131F776ED /* StringMatchers.swift */; };
+		BA299BE8F67089A9445EB2895E6983DC /* CornerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FC12A8EEED281B842098229C92DE0D /* CornerPosition.swift */; };
+		C02E2DFC71AA9EF84CEFFB6A7EE981D0 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D9CE19113ACB5524D3F9738C5868 /* CoordinateSystem.swift */; };
+		C47E9044CCC389B561980E14CCBBB1E5 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D7048516124380C712CFDEA0B26AA /* Rotatable.swift */; };
+		C63A0DDE4356A0926C2C2AB527953FB4 /* Pods-Metron_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5285876D7A8D247690EBE9E3EDD79D /* Pods-Metron_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B31F4BBB98F274986AB43DEACA055A /* DictionaryMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33367B98751BE9EDA8607ECB2277C781 /* DictionaryMatchers.swift */; };
+		D1DC13F94BAC1BC81CAF0658EE439284 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A26EB2036D9E749DE19CBF2B3A0463 /* Shape.swift */; };
+		D4EF62160556976A7545C64B5102C69D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */; };
+		DE146D933146D3091AC9DD3D487CBCA4 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77C9162BFF6A38943EAAE9C31D361D /* Square.swift */; };
+		DE1CAD8A1E8BCBF23575D2246742639B /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E9A399A193D64D50C71CE1D593D9EC /* Descriptions.swift */; };
+		F7B9A39ECABF38E151F3AB587A73816B /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBB88144AC2D8AFC7F5051C20505B7 /* General.swift */; };
+		FC0564F7A6EA72011ABA58A49A04A9CE /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85D6F3405A21A9562E7425F8F82708 /* Polygon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7CC2746EF9DB60A19E5445E18FBCAA04 /* PBXContainerItemProxy */ = {
+		7C842384558B4EB807C0B1CECC511077 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6EC0FA4E5E9EDC9A2BC00AA828A1B877;
+			remoteGlobalIDString = 3BEE30DCF2B9BA2CFCD604ECABF0981C;
 			remoteInfo = Metron;
 		};
-		A7D7B55AF061F72049CBDB80A60B67D3 /* PBXContainerItemProxy */ = {
+		DE30B3F8D3941C5ADA3876D7AA122975 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6EC0FA4E5E9EDC9A2BC00AA828A1B877;
-			remoteInfo = Metron;
-		};
-		EAB3AEFCFCD6548CEC74945DD3C962AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5307FF2EE6D807853E75F42953219F9B;
+			remoteGlobalIDString = BFA3C69CEEA7F1759CB1D925B1DF8DA2;
 			remoteInfo = SwiftHamcrest;
+		};
+		F2194EC8A7AAE2155AF867693C6FAE2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BEE30DCF2B9BA2CFCD604ECABF0981C;
+			remoteInfo = Metron;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0042E1BA29D23C59349814E7BDB004AD /* LineSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineSegment.swift; sourceTree = "<group>"; };
-		00825CD5CD69CEC4F633336DC02635BB /* Descriptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptions.swift; path = Hamcrest/Descriptions.swift; sourceTree = "<group>"; };
-		06A618D7F0E9AD666B5791E97D656775 /* Square.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
-		0CD5E827617B19A1BBABE12D974CCBF2 /* SwiftHamcrest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftHamcrest.modulemap; sourceTree = "<group>"; };
-		0EF434EAA5D93DBC27BE0486D540D675 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchResult.swift; path = Hamcrest/MatchResult.swift; sourceTree = "<group>"; };
-		10EF4C5352AFFA2F0356AF591BB2F3F4 /* CornerPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CornerPosition.swift; sourceTree = "<group>"; };
-		143BF4700AA63BB3671DD7FB9BEC631A /* DictionaryMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryMatchers.swift; path = Hamcrest/DictionaryMatchers.swift; sourceTree = "<group>"; };
-		15AD3C3CCFDD5A90487DE8CAA6EB97EC /* SwiftHamcrest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHamcrest-dummy.m"; sourceTree = "<group>"; };
-		16F6F19635D721495ED7AAD62820AB8E /* CGRectEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRectEdge.swift; sourceTree = "<group>"; };
-		19B9CD90A07DB0A6D460FE8FA90FFA08 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		1B9B060BC58C54BAEEE7B5BC905D08B8 /* Metron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Metron.framework; path = Metron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C0B247D8935765047B97316C41A961E /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
-		1FD93A6F750EF2B95DBF9878D63CCBF5 /* Pods-Metron_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Metron_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		25916E762D2636A02ED8FA0E7D093025 /* CornerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CornerType.swift; sourceTree = "<group>"; };
-		29C90FA0BE70B1BA64896DE7D1C77906 /* Pods-Metron_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Metron_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		334E54A054F58A66CC32558F853CA90F /* Pods-Metron_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Metron_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		336E7F65C25518C62E6C6F149AC834C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36105DF30F12473B4B862E5DB5262E22 /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		36A666772F3294ED77B3CCBF34894E9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38260942F8D373DFA849AF378C7C5D00 /* SequenceMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SequenceMatchers.swift; path = Hamcrest/SequenceMatchers.swift; sourceTree = "<group>"; };
-		3DDD767BE5AF62C391F287C8AA6AB1D3 /* SwiftHamcrest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-umbrella.h"; sourceTree = "<group>"; };
-		3F4D62D511929BD498A18CD2F0E98069 /* Metron.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Metron.xcconfig; sourceTree = "<group>"; };
-		3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		42449FCB8563C9384129006BD7C375EE /* PolygonType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PolygonType.swift; sourceTree = "<group>"; };
-		47082FDCD1AC603553107698BE5D9AFE /* Pods-Metron_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Metron_Example-frameworks.sh"; sourceTree = "<group>"; };
-		498FC55244B801D8FE08851FEEED0686 /* Pods_Metron_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Metron_Example.framework; path = "Pods-Metron_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49928C95B3960F6F573B39DAD763E85F /* Pods-Metron_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4D560F3C12FD0F7335940F49ED6B69E3 /* Pods-Metron_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Metron_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E3E7963B9C808AE07845988219B2022 /* Pods_Metron_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Metron_Tests.framework; path = "Pods-Metron_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50BB7D3E0F5F0C034CAC412AF54907A0 /* Pods-Metron_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Metron_Tests-umbrella.h"; sourceTree = "<group>"; };
-		57E2132B23B9DD1838441E2283783465 /* Pods-Metron_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Metron_Example-dummy.m"; sourceTree = "<group>"; };
-		5F882575430EE6ECCCD3F0FE54031BB1 /* Matcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = Hamcrest/Matcher.swift; sourceTree = "<group>"; };
-		6AC54D9FFDCA60E1A8ABAE85321BEACD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EB4E0D1D51AD8E61F25BB4A174AF260 /* Pods-Metron_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Metron_Example.modulemap"; sourceTree = "<group>"; };
-		71D84004A8481BAA73AFC6D86AEDB1F1 /* Hamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hamcrest.framework; path = SwiftHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		720F2E72913C8CF9EA0545C544CE1AE0 /* Side.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
-		790B5E4F58BAB06808759C87DC4D1176 /* StringMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringMatchers.swift; path = Hamcrest/StringMatchers.swift; sourceTree = "<group>"; };
-		7E34B25B70B6C2D433981E15325DD38C /* Metron-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Metron-dummy.m"; sourceTree = "<group>"; };
-		7FF510FD8E9F3C5262C85A6DAB0C0EA1 /* Metron-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Metron-umbrella.h"; sourceTree = "<group>"; };
-		812F170B5B26B1D3C0C631E21B974213 /* Pods-Metron_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Metron_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		81E3DA0EA304A1F022D9C31C76DCFEF6 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		82A73F270F07A696943EA436C94812A9 /* MetaMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetaMatchers.swift; path = Hamcrest/MetaMatchers.swift; sourceTree = "<group>"; };
-		853A248BE8CB1596C2EBFE4D2D4D350B /* BasicMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatchers.swift; path = Hamcrest/BasicMatchers.swift; sourceTree = "<group>"; };
-		85A240C39D2772410FC294D78299FA39 /* Pods-Metron_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Metron_Example-resources.sh"; sourceTree = "<group>"; };
-		88816AA3D21D2A075B2756288D5CD2F0 /* Corner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
-		890CA0E2D5308BB60BF93EEC7530AAEA /* ArithmeticMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArithmeticMatchers.swift; path = Hamcrest/ArithmeticMatchers.swift; sourceTree = "<group>"; };
-		8B13E9C86E35F889B7963F23CACF5670 /* Metron.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Metron.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		960B740527E4D35477B604C743EF2FC4 /* Pods-Metron_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Metron_Tests-dummy.m"; sourceTree = "<group>"; };
-		971CDA4F14B31D74715EF1787D2A4730 /* Pods-Metron_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		98C13BAF2E3A66C1AB0D63EAD1579279 /* Rotatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
-		A00B039B380B935CDEC8B216A0D763A6 /* ReflectionMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionMatchers.swift; path = Hamcrest/ReflectionMatchers.swift; sourceTree = "<group>"; };
-		A22108084210DC50070E540624A9CC02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A443C0C40A7262B83CBDC4DED2465D8E /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
-		AB8FAF97894DF247114A6375EEF494F3 /* Pods-Metron_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Metron_Tests-resources.sh"; sourceTree = "<group>"; };
-		AF6C4B61F9D1A8D7F33B82008ECF78AD /* Hamcrest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hamcrest.swift; path = Hamcrest/Hamcrest.swift; sourceTree = "<group>"; };
-		B0B7DA11A860C48BD0312531279CEE7E /* Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
-		BE416C75F25C6EB4683B16C7CF95816B /* Pods-Metron_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Metron_Example-umbrella.h"; sourceTree = "<group>"; };
-		C3E319AAE19699CF4000BB99B60BF06F /* EdgeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EdgeType.swift; sourceTree = "<group>"; };
-		C4788AE83E56DCAD048CB507D0666382 /* CoordinateSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
-		C68F921B187CF7CA74C2470819749761 /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
-		C6EC7038DDED657ADB13095165996253 /* SwiftHamcrest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-prefix.pch"; sourceTree = "<group>"; };
-		C98FD86DDDE8801355DAD45C3A295556 /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
-		CCA2B14097F74025990A34ECE19F5921 /* Triangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		CD12AB40CE95DB328AD345E4C7D03872 /* CGVector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
-		D3695E9665B3188B7D7C3C2A761F7FDE /* Pods-Metron_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Metron_Tests.modulemap"; sourceTree = "<group>"; };
-		E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E5F499FF79DBDBC8347A7303F7647333 /* General.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
-		E78A949ADC1300831DCC9A6732BACD1F /* Opposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Opposable.swift; sourceTree = "<group>"; };
-		E9DA48D0F12ED5A3CA61AC8716B78C5F /* Pods-Metron_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F2839A739FC4E065A1D3A1507E99B46A /* CGAffineTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGAffineTransform.swift; sourceTree = "<group>"; };
-		F2C03710041F96F7C26B83B5FCBE833D /* Pods-Metron_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F556987EFF3CAFC5B0577FDB7DBF3BDF /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
-		F7B25D5DC3520936EACBE43CE7342084 /* Metron-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Metron-prefix.pch"; sourceTree = "<group>"; };
-		FD2334B95370056BFC1A78980F4F6B88 /* OperatorMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorMatchers.swift; path = Hamcrest/OperatorMatchers.swift; sourceTree = "<group>"; };
-		FE834AF05656A6A9192649F24EBBCDEB /* SwiftHamcrest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHamcrest.xcconfig; sourceTree = "<group>"; };
+		01F6DA909B6EA9D8F6571B3F3F62E958 /* SwiftHamcrest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHamcrest.xcconfig; sourceTree = "<group>"; };
+		0203149F74AAF1C3E80E24AE68599872 /* MetaMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetaMatchers.swift; path = Hamcrest/MetaMatchers.swift; sourceTree = "<group>"; };
+		1AD2DE1B72BB938CE868B897405C691B /* Pods-Metron_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Metron_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1AF9C8E6AB3D4FFC21DC750A8A013DBD /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		202CD02DF986D91AC7D6796334C56C17 /* Pods-Metron_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Metron_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A6645C7F346967DC77C1515D7A8B980 /* CGAffineTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGAffineTransform.swift; sourceTree = "<group>"; };
+		2C3CC39E76B9BB4BDB1D12019CF1CE55 /* Pods-Metron_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Metron_Example.modulemap"; sourceTree = "<group>"; };
+		33367B98751BE9EDA8607ECB2277C781 /* DictionaryMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryMatchers.swift; path = Hamcrest/DictionaryMatchers.swift; sourceTree = "<group>"; };
+		3416DD02EC95B6045ED4BC7D7DB3349E /* Pods-Metron_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Metron_Tests-Info.plist"; sourceTree = "<group>"; };
+		3587ED7154A9B8E72CD53571168F1C35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		37A620DB8830C0A5B2EA3C35AAC43714 /* Pods_Metron_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Metron_Example.framework; path = "Pods-Metron_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3817609959C1514517D41D0131F776ED /* StringMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringMatchers.swift; path = Hamcrest/StringMatchers.swift; sourceTree = "<group>"; };
+		39234B205D1D13D563C0549E1F98A5AF /* Pods-Metron_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A3599E00AFD25A08F984489BF99E156 /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		3AF0C7C4FA3464175BE4395ADBF82231 /* Pods-Metron_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Metron_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EF3A75ECB1C2A1583921F7A4206C3FE /* CGVector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		47A26EB2036D9E749DE19CBF2B3A0463 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		48C44D1A8E15785984B28729612B931A /* CornerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CornerType.swift; sourceTree = "<group>"; };
+		49F255976DE91BA0BEE7438B295E682D /* Hamcrest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hamcrest.swift; path = Hamcrest/Hamcrest.swift; sourceTree = "<group>"; };
+		4A9C9F4750B227B8DECE1A542DC7C402 /* CGRectEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRectEdge.swift; sourceTree = "<group>"; };
+		4ECF1A38A2275928CA3D808C76BD2A16 /* Matcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = Hamcrest/Matcher.swift; sourceTree = "<group>"; };
+		541F24909931D349717A7F0EE3430EF2 /* ReflectionMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionMatchers.swift; path = Hamcrest/ReflectionMatchers.swift; sourceTree = "<group>"; };
+		5556C284BF475169A7BC55DE6A7FA3CE /* EdgeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EdgeType.swift; sourceTree = "<group>"; };
+		5B2749DF0BDD945D908D2EC45B6FD9C0 /* OperatorMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorMatchers.swift; path = Hamcrest/OperatorMatchers.swift; sourceTree = "<group>"; };
+		5C056568540039C510F51CDA96C3A0D7 /* Pods-Metron_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5C97FA0372A57A46093DDB89B7DB3F91 /* Pods-Metron_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Metron_Example-dummy.m"; sourceTree = "<group>"; };
+		5FC978C77422E552FB14FA99AC9B759A /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		5FCED7FA8D2C4B496E44489E30A4D87C /* LineSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineSegment.swift; sourceTree = "<group>"; };
+		64D17D6A601D0E58F4FA1D4452FCB6CA /* Side.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
+		6C85D6F3405A21A9562E7425F8F82708 /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		6F3E58A1EC79452B4A4D75903FDBB47F /* Triangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		6FD98DB8C1AA8E2390412D61DB64864D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		727F2F4A01C023A7BF26CEC8BDA78DF0 /* Metron.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Metron.modulemap; sourceTree = "<group>"; };
+		734F46A5227BD64B0812DE1C4FC766F6 /* Pods-Metron_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Metron_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7414849F321B9B5D71BBFC3DA614EE49 /* Pods-Metron_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Metron_Tests-dummy.m"; sourceTree = "<group>"; };
+		75EBB88144AC2D8AFC7F5051C20505B7 /* General.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		781F5BE5252ACB03AABCBF00000B7211 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		7D63A7E92329D6229448F55ED69D11A3 /* ArithmeticMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArithmeticMatchers.swift; path = Hamcrest/ArithmeticMatchers.swift; sourceTree = "<group>"; };
+		819F9AC320205E799CE3523FAD72E3EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		864F42C9CC846861A88BD1CC4F8E44B4 /* Pods-Metron_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Metron_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C956AC031CD6CA9FD963AEA871266E4 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		971B8A86CE3E46D915CEA6E3C2530FF0 /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+		989C716686B526AD83A11076B5F43F57 /* Metron-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Metron-umbrella.h"; sourceTree = "<group>"; };
+		9A4A547A5A7029F9F39A874DAA45D7C5 /* Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		9B2069D7E36390EC410C114829241271 /* SwiftHamcrest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-prefix.pch"; sourceTree = "<group>"; };
+		9D00C2AE5259FE6CAC897B6F466BC88A /* Hamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hamcrest.framework; path = SwiftHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F2B8D4FB902C4CA8E5923AA7CA5E57C /* Metron-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Metron-dummy.m"; sourceTree = "<group>"; };
+		A56872AD4BA195A093763122AD211723 /* Metron-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Metron-Info.plist"; sourceTree = "<group>"; };
+		A63A706229F6C147FE9AAF321A748485 /* Pods-Metron_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Metron_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A64FA26ECE830364724ABC6713157EB7 /* Metron-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Metron-prefix.pch"; sourceTree = "<group>"; };
+		A7E9A399A193D64D50C71CE1D593D9EC /* Descriptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptions.swift; path = Hamcrest/Descriptions.swift; sourceTree = "<group>"; };
+		AEFB257D32DF11AD3ABABD9EC6F076FB /* Corner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
+		B1AB528A243ADBC093B0505423F48455 /* Pods-Metron_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Metron_Example-umbrella.h"; sourceTree = "<group>"; };
+		C533195EFC14942EC61D268879A14F01 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchResult.swift; path = Hamcrest/MatchResult.swift; sourceTree = "<group>"; };
+		C64A5F5444A07FC2995E772E87C2A176 /* Pods-Metron_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Metron_Example-Info.plist"; sourceTree = "<group>"; };
+		C65BA0D621247C6A37F4EBC52E040622 /* SwiftHamcrest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftHamcrest-Info.plist"; sourceTree = "<group>"; };
+		CCB2D12C91E9C3FDBB4088AC8BB7ADBD /* PolygonType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PolygonType.swift; sourceTree = "<group>"; };
+		CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFF9F30D53740C622C5CDCBD17DDE3AB /* Metron.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Metron.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D2A8D9CE19113ACB5524D3F9738C5868 /* CoordinateSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
+		D523D52C82815D4107BA5C344FC5EF3E /* BasicMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatchers.swift; path = Hamcrest/BasicMatchers.swift; sourceTree = "<group>"; };
+		D86D7048516124380C712CFDEA0B26AA /* Rotatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		D8DDBFED8FBBA336CA6BE392C5F5B075 /* Opposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Opposable.swift; sourceTree = "<group>"; };
+		DB77C9162BFF6A38943EAAE9C31D361D /* Square.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		E6E5350B5610C5D6BA45229FE3BCC163 /* SwiftHamcrest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-umbrella.h"; sourceTree = "<group>"; };
+		E9FC12A8EEED281B842098229C92DE0D /* CornerPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CornerPosition.swift; sourceTree = "<group>"; };
+		EEE90EB0AC40E1C593C23780BB19C45F /* Pods_Metron_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Metron_Tests.framework; path = "Pods-Metron_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16E4F86636BCA85D445652630AFDF23 /* Pods-Metron_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Metron_Tests.modulemap"; sourceTree = "<group>"; };
+		F28E191322A77FEC233E28F8DE618CAE /* Pods-Metron_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4F40DD146AB731739ABC5A7C1E47560 /* Metron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Metron.framework; path = Metron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55568EB23A5D70EAB75E10F1D543410 /* SequenceMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SequenceMatchers.swift; path = Hamcrest/SequenceMatchers.swift; sourceTree = "<group>"; };
+		F6188DD287DDE38D7C7CAC3B7F40AE2D /* Pods-Metron_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Metron_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F6BA2DD083FB2F78E9CA64A0F0CD650A /* SwiftHamcrest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHamcrest-dummy.m"; sourceTree = "<group>"; };
+		F6F4EF1387067616F0080AB907E1EF41 /* SwiftHamcrest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHamcrest.modulemap; sourceTree = "<group>"; };
+		FA5285876D7A8D247690EBE9E3EDD79D /* Pods-Metron_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Metron_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FB0467CAF6DC322AE8CA46FA831A0CB9 /* Metron.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Metron.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04C5F24230528B27F69753886F530A9B /* Frameworks */ = {
+		05E16A731345C8DFF648BA16041791DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FFEADCEED790F27D69531AD4A40CAF /* Foundation.framework in Frameworks */,
+				D4EF62160556976A7545C64B5102C69D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C4CD9D492C54D8A94A521170C8358A5 /* Frameworks */ = {
+		2C98BD08A1E3445D1D965FBF72FC5F7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC46EA3A25D8A1228882A7D4B6F3BC2 /* Foundation.framework in Frameworks */,
+				4905F59E18E44E5ACD59EC678C2143FE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		592386A59BA61DE876C0419F7BB62918 /* Frameworks */ = {
+		7E2EA0717D40F430055F68872EF932C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5BB3D5D5EF0702031683AF9B2CCBFFF /* Foundation.framework in Frameworks */,
-				C055822F491D99FD6A4D59DDA6322BF9 /* XCTest.framework in Frameworks */,
+				1E5A4012484E8AD76C9E4FE82C7290A0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DE5CF692038B0D9CF4098976DBE5648 /* Frameworks */ = {
+		BDC805CF1793D2BD7DCEBDC57586E8E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0029C57407C93BBB17252CE5E6C570 /* Foundation.framework in Frameworks */,
+				2A924CCC7DB1712DD36C9F38276ABA99 /* Foundation.framework in Frameworks */,
+				AD38A03D91F114DD1FA23C4CE39FCE03 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09D50565A022A5A08221F41F6A0E5E26 /* Support Files */ = {
+		04E0605F34C505C2E004C31506554D59 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A22108084210DC50070E540624A9CC02 /* Info.plist */,
-				8B13E9C86E35F889B7963F23CACF5670 /* Metron.modulemap */,
-				3F4D62D511929BD498A18CD2F0E98069 /* Metron.xcconfig */,
-				7E34B25B70B6C2D433981E15325DD38C /* Metron-dummy.m */,
-				F7B25D5DC3520936EACBE43CE7342084 /* Metron-prefix.pch */,
-				7FF510FD8E9F3C5262C85A6DAB0C0EA1 /* Metron-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Metron";
-			sourceTree = "<group>";
-		};
-		0B32B8B666B8F604D40DD92CF10F0DB1 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AE5DEA3C383E325899A3163B533236E9 /* Metron */,
+				3E96ED0543A7193BEB66A3874DEB04A0 /* Metron */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		349E7DDB0CA6AFA14B943D65A789F3F0 /* Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6AC54D9FFDCA60E1A8ABAE85321BEACD /* Info.plist */,
-				0CD5E827617B19A1BBABE12D974CCBF2 /* SwiftHamcrest.modulemap */,
-				FE834AF05656A6A9192649F24EBBCDEB /* SwiftHamcrest.xcconfig */,
-				15AD3C3CCFDD5A90487DE8CAA6EB97EC /* SwiftHamcrest-dummy.m */,
-				C6EC7038DDED657ADB13095165996253 /* SwiftHamcrest-prefix.pch */,
-				3DDD767BE5AF62C391F287C8AA6AB1D3 /* SwiftHamcrest-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftHamcrest";
-			sourceTree = "<group>";
-		};
-		38EC28CD424B7B7C8F942F5F389A8686 /* Pods-Metron_Example */ = {
-			isa = PBXGroup;
-			children = (
-				336E7F65C25518C62E6C6F149AC834C0 /* Info.plist */,
-				6EB4E0D1D51AD8E61F25BB4A174AF260 /* Pods-Metron_Example.modulemap */,
-				29C90FA0BE70B1BA64896DE7D1C77906 /* Pods-Metron_Example-acknowledgements.markdown */,
-				812F170B5B26B1D3C0C631E21B974213 /* Pods-Metron_Example-acknowledgements.plist */,
-				57E2132B23B9DD1838441E2283783465 /* Pods-Metron_Example-dummy.m */,
-				47082FDCD1AC603553107698BE5D9AFE /* Pods-Metron_Example-frameworks.sh */,
-				85A240C39D2772410FC294D78299FA39 /* Pods-Metron_Example-resources.sh */,
-				BE416C75F25C6EB4683B16C7CF95816B /* Pods-Metron_Example-umbrella.h */,
-				49928C95B3960F6F573B39DAD763E85F /* Pods-Metron_Example.debug.xcconfig */,
-				F2C03710041F96F7C26B83B5FCBE833D /* Pods-Metron_Example.release.xcconfig */,
-			);
-			name = "Pods-Metron_Example";
-			path = "Target Support Files/Pods-Metron_Example";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7BE34EE7067F7CC8A54539A282682749 /* iOS */,
+				B4A20DE51C57CCE6549A26D79F664F86 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		652A93E935F2B896F2A3C5B2BC40CB35 /* Extensions */ = {
+		1BF66972CE224763B83994DFB8F7D90B /* SwiftHamcrest */ = {
 			isa = PBXGroup;
 			children = (
-				F2839A739FC4E065A1D3A1507E99B46A /* CGAffineTransform.swift */,
-				A443C0C40A7262B83CBDC4DED2465D8E /* CGPoint.swift */,
-				C98FD86DDDE8801355DAD45C3A295556 /* CGRect.swift */,
-				16F6F19635D721495ED7AAD62820AB8E /* CGRectEdge.swift */,
-				1C0B247D8935765047B97316C41A961E /* CGSize.swift */,
-				CD12AB40CE95DB328AD345E4C7D03872 /* CGVector.swift */,
-			);
-			name = Extensions;
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		74553245016C5C7CE93EFA1D3256EC6B /* SwiftHamcrest */ = {
-			isa = PBXGroup;
-			children = (
-				890CA0E2D5308BB60BF93EEC7530AAEA /* ArithmeticMatchers.swift */,
-				853A248BE8CB1596C2EBFE4D2D4D350B /* BasicMatchers.swift */,
-				00825CD5CD69CEC4F633336DC02635BB /* Descriptions.swift */,
-				143BF4700AA63BB3671DD7FB9BEC631A /* DictionaryMatchers.swift */,
-				AF6C4B61F9D1A8D7F33B82008ECF78AD /* Hamcrest.swift */,
-				5F882575430EE6ECCCD3F0FE54031BB1 /* Matcher.swift */,
-				0EF434EAA5D93DBC27BE0486D540D675 /* MatchResult.swift */,
-				82A73F270F07A696943EA436C94812A9 /* MetaMatchers.swift */,
-				FD2334B95370056BFC1A78980F4F6B88 /* OperatorMatchers.swift */,
-				A00B039B380B935CDEC8B216A0D763A6 /* ReflectionMatchers.swift */,
-				38260942F8D373DFA849AF378C7C5D00 /* SequenceMatchers.swift */,
-				790B5E4F58BAB06808759C87DC4D1176 /* StringMatchers.swift */,
-				349E7DDB0CA6AFA14B943D65A789F3F0 /* Support Files */,
+				7D63A7E92329D6229448F55ED69D11A3 /* ArithmeticMatchers.swift */,
+				D523D52C82815D4107BA5C344FC5EF3E /* BasicMatchers.swift */,
+				A7E9A399A193D64D50C71CE1D593D9EC /* Descriptions.swift */,
+				33367B98751BE9EDA8607ECB2277C781 /* DictionaryMatchers.swift */,
+				49F255976DE91BA0BEE7438B295E682D /* Hamcrest.swift */,
+				4ECF1A38A2275928CA3D808C76BD2A16 /* Matcher.swift */,
+				C533195EFC14942EC61D268879A14F01 /* MatchResult.swift */,
+				0203149F74AAF1C3E80E24AE68599872 /* MetaMatchers.swift */,
+				5B2749DF0BDD945D908D2EC45B6FD9C0 /* OperatorMatchers.swift */,
+				541F24909931D349717A7F0EE3430EF2 /* ReflectionMatchers.swift */,
+				F55568EB23A5D70EAB75E10F1D543410 /* SequenceMatchers.swift */,
+				3817609959C1514517D41D0131F776ED /* StringMatchers.swift */,
+				E979C1EE009FD5AA4F5CE95A52224B1A /* Support Files */,
 			);
 			name = SwiftHamcrest;
 			path = SwiftHamcrest;
 			sourceTree = "<group>";
 		};
-		7BE34EE7067F7CC8A54539A282682749 /* iOS */ = {
+		20B42AD48686EAF9A3F4194F7FCA0431 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */,
-				3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */,
+				2A6645C7F346967DC77C1515D7A8B980 /* CGAffineTransform.swift */,
+				5FC978C77422E552FB14FA99AC9B759A /* CGPoint.swift */,
+				3A3599E00AFD25A08F984489BF99E156 /* CGRect.swift */,
+				4A9C9F4750B227B8DECE1A542DC7C402 /* CGRectEdge.swift */,
+				781F5BE5252ACB03AABCBF00000B7211 /* CGSize.swift */,
+				3EF3A75ECB1C2A1583921F7A4206C3FE /* CGVector.swift */,
 			);
-			name = iOS;
+			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		3077D8F1F99382F1ED4F13C2157CC1B0 /* Pods-Metron_Example */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0B32B8B666B8F604D40DD92CF10F0DB1 /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				CD5CD71DBB1C90057247A2CA0C6EED6A /* Pods */,
-				7E2D50E683EAF31B697660035ABC3E4B /* Products */,
-				DC65687EDED46C0C8D8CA6278073FB0F /* Targets Support Files */,
+				2C3CC39E76B9BB4BDB1D12019CF1CE55 /* Pods-Metron_Example.modulemap */,
+				3AF0C7C4FA3464175BE4395ADBF82231 /* Pods-Metron_Example-acknowledgements.markdown */,
+				864F42C9CC846861A88BD1CC4F8E44B4 /* Pods-Metron_Example-acknowledgements.plist */,
+				5C97FA0372A57A46093DDB89B7DB3F91 /* Pods-Metron_Example-dummy.m */,
+				A63A706229F6C147FE9AAF321A748485 /* Pods-Metron_Example-frameworks.sh */,
+				C64A5F5444A07FC2995E772E87C2A176 /* Pods-Metron_Example-Info.plist */,
+				B1AB528A243ADBC093B0505423F48455 /* Pods-Metron_Example-umbrella.h */,
+				5C056568540039C510F51CDA96C3A0D7 /* Pods-Metron_Example.debug.xcconfig */,
+				39234B205D1D13D563C0549E1F98A5AF /* Pods-Metron_Example.release.xcconfig */,
 			);
+			name = "Pods-Metron_Example";
+			path = "Target Support Files/Pods-Metron_Example";
 			sourceTree = "<group>";
 		};
-		7E2D50E683EAF31B697660035ABC3E4B /* Products */ = {
+		37C03196565CB253497F7C5BB2A23A34 /* Pods-Metron_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				71D84004A8481BAA73AFC6D86AEDB1F1 /* Hamcrest.framework */,
-				1B9B060BC58C54BAEEE7B5BC905D08B8 /* Metron.framework */,
-				498FC55244B801D8FE08851FEEED0686 /* Pods_Metron_Example.framework */,
-				4E3E7963B9C808AE07845988219B2022 /* Pods_Metron_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		83520C61D286D45E9F41C4C115E31B2D /* Visual */ = {
-			isa = PBXGroup;
-			children = (
-				C4788AE83E56DCAD048CB507D0666382 /* CoordinateSystem.swift */,
-				10EF4C5352AFFA2F0356AF591BB2F3F4 /* CornerPosition.swift */,
-				720F2E72913C8CF9EA0545C544CE1AE0 /* Side.swift */,
-			);
-			name = Visual;
-			path = Visual;
-			sourceTree = "<group>";
-		};
-		AE5DEA3C383E325899A3163B533236E9 /* Metron */ = {
-			isa = PBXGroup;
-			children = (
-				F28A63E93B0A4E62E1C9897A8B3F8BBB /* Classes */,
-				B59BF796108575216EB87845867C5E77 /* Protocols */,
-				09D50565A022A5A08221F41F6A0E5E26 /* Support Files */,
-			);
-			name = Metron;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B59BF796108575216EB87845867C5E77 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				25916E762D2636A02ED8FA0E7D093025 /* CornerType.swift */,
-				F556987EFF3CAFC5B0577FDB7DBF3BDF /* Drawable.swift */,
-				C3E319AAE19699CF4000BB99B60BF06F /* EdgeType.swift */,
-				E78A949ADC1300831DCC9A6732BACD1F /* Opposable.swift */,
-				42449FCB8563C9384129006BD7C375EE /* PolygonType.swift */,
-				98C13BAF2E3A66C1AB0D63EAD1579279 /* Rotatable.swift */,
-				81E3DA0EA304A1F022D9C31C76DCFEF6 /* Shape.swift */,
-			);
-			name = Protocols;
-			path = Metron/Protocols;
-			sourceTree = "<group>";
-		};
-		CD5CD71DBB1C90057247A2CA0C6EED6A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				74553245016C5C7CE93EFA1D3256EC6B /* SwiftHamcrest */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DC65687EDED46C0C8D8CA6278073FB0F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				38EC28CD424B7B7C8F942F5F389A8686 /* Pods-Metron_Example */,
-				EB9823B62CC86E467A17353020015012 /* Pods-Metron_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		EB9823B62CC86E467A17353020015012 /* Pods-Metron_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				36A666772F3294ED77B3CCBF34894E9F /* Info.plist */,
-				D3695E9665B3188B7D7C3C2A761F7FDE /* Pods-Metron_Tests.modulemap */,
-				4D560F3C12FD0F7335940F49ED6B69E3 /* Pods-Metron_Tests-acknowledgements.markdown */,
-				334E54A054F58A66CC32558F853CA90F /* Pods-Metron_Tests-acknowledgements.plist */,
-				960B740527E4D35477B604C743EF2FC4 /* Pods-Metron_Tests-dummy.m */,
-				1FD93A6F750EF2B95DBF9878D63CCBF5 /* Pods-Metron_Tests-frameworks.sh */,
-				AB8FAF97894DF247114A6375EEF494F3 /* Pods-Metron_Tests-resources.sh */,
-				50BB7D3E0F5F0C034CAC412AF54907A0 /* Pods-Metron_Tests-umbrella.h */,
-				971CDA4F14B31D74715EF1787D2A4730 /* Pods-Metron_Tests.debug.xcconfig */,
-				E9DA48D0F12ED5A3CA61AC8716B78C5F /* Pods-Metron_Tests.release.xcconfig */,
+				F16E4F86636BCA85D445652630AFDF23 /* Pods-Metron_Tests.modulemap */,
+				734F46A5227BD64B0812DE1C4FC766F6 /* Pods-Metron_Tests-acknowledgements.markdown */,
+				202CD02DF986D91AC7D6796334C56C17 /* Pods-Metron_Tests-acknowledgements.plist */,
+				7414849F321B9B5D71BBFC3DA614EE49 /* Pods-Metron_Tests-dummy.m */,
+				1AD2DE1B72BB938CE868B897405C691B /* Pods-Metron_Tests-frameworks.sh */,
+				3416DD02EC95B6045ED4BC7D7DB3349E /* Pods-Metron_Tests-Info.plist */,
+				FA5285876D7A8D247690EBE9E3EDD79D /* Pods-Metron_Tests-umbrella.h */,
+				F28E191322A77FEC233E28F8DE618CAE /* Pods-Metron_Tests.debug.xcconfig */,
+				F6188DD287DDE38D7C7CAC3B7F40AE2D /* Pods-Metron_Tests.release.xcconfig */,
 			);
 			name = "Pods-Metron_Tests";
 			path = "Target Support Files/Pods-Metron_Tests";
 			sourceTree = "<group>";
 		};
-		F28A63E93B0A4E62E1C9897A8B3F8BBB /* Classes */ = {
+		3E96ED0543A7193BEB66A3874DEB04A0 /* Metron */ = {
 			isa = PBXGroup;
 			children = (
-				B0B7DA11A860C48BD0312531279CEE7E /* Angle.swift */,
-				36105DF30F12473B4B862E5DB5262E22 /* Circle.swift */,
-				88816AA3D21D2A075B2756288D5CD2F0 /* Corner.swift */,
-				E5F499FF79DBDBC8347A7303F7647333 /* General.swift */,
-				19B9CD90A07DB0A6D460FE8FA90FFA08 /* Line.swift */,
-				0042E1BA29D23C59349814E7BDB004AD /* LineSegment.swift */,
-				C68F921B187CF7CA74C2470819749761 /* Polygon.swift */,
-				06A618D7F0E9AD666B5791E97D656775 /* Square.swift */,
-				CCA2B14097F74025990A34ECE19F5921 /* Triangle.swift */,
-				652A93E935F2B896F2A3C5B2BC40CB35 /* Extensions */,
-				83520C61D286D45E9F41C4C115E31B2D /* Visual */,
+				A214F2B28346C935B1DA51A0476A6121 /* Classes */,
+				AD6D4828A9EC4F6BB60E994D776E68FE /* Pod */,
+				B4C6E2CBCE700E684D1AF89F82691C0F /* Protocols */,
+				C7026195EAE05A4281D5A267322AD708 /* Support Files */,
+			);
+			name = Metron;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		616013D16E13A8EE1EB4B5120463D8D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BF66972CE224763B83994DFB8F7D90B /* SwiftHamcrest */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A214F2B28346C935B1DA51A0476A6121 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A547A5A7029F9F39A874DAA45D7C5 /* Angle.swift */,
+				1AF9C8E6AB3D4FFC21DC750A8A013DBD /* Circle.swift */,
+				AEFB257D32DF11AD3ABABD9EC6F076FB /* Corner.swift */,
+				75EBB88144AC2D8AFC7F5051C20505B7 /* General.swift */,
+				8C956AC031CD6CA9FD963AEA871266E4 /* Line.swift */,
+				5FCED7FA8D2C4B496E44489E30A4D87C /* LineSegment.swift */,
+				6C85D6F3405A21A9562E7425F8F82708 /* Polygon.swift */,
+				DB77C9162BFF6A38943EAAE9C31D361D /* Square.swift */,
+				6F3E58A1EC79452B4A4D75903FDBB47F /* Triangle.swift */,
+				20B42AD48686EAF9A3F4194F7FCA0431 /* Extensions */,
+				F7F1E8D067D500B6B4547C397AF363F7 /* Visual */,
 			);
 			name = Classes;
 			path = Metron/Classes;
 			sourceTree = "<group>";
 		};
+		AD6D4828A9EC4F6BB60E994D776E68FE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3587ED7154A9B8E72CD53571168F1C35 /* LICENSE */,
+				CFF9F30D53740C622C5CDCBD17DDE3AB /* Metron.podspec */,
+				819F9AC320205E799CE3523FAD72E3EC /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B4A20DE51C57CCE6549A26D79F664F86 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */,
+				6FD98DB8C1AA8E2390412D61DB64864D /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B4C6E2CBCE700E684D1AF89F82691C0F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				48C44D1A8E15785984B28729612B931A /* CornerType.swift */,
+				971B8A86CE3E46D915CEA6E3C2530FF0 /* Drawable.swift */,
+				5556C284BF475169A7BC55DE6A7FA3CE /* EdgeType.swift */,
+				D8DDBFED8FBBA336CA6BE392C5F5B075 /* Opposable.swift */,
+				CCB2D12C91E9C3FDBB4088AC8BB7ADBD /* PolygonType.swift */,
+				D86D7048516124380C712CFDEA0B26AA /* Rotatable.swift */,
+				47A26EB2036D9E749DE19CBF2B3A0463 /* Shape.swift */,
+			);
+			name = Protocols;
+			path = Metron/Protocols;
+			sourceTree = "<group>";
+		};
+		B7C6AB09C72C8F5FC5E06DA0B5AFF6AE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3077D8F1F99382F1ED4F13C2157CC1B0 /* Pods-Metron_Example */,
+				37C03196565CB253497F7C5BB2A23A34 /* Pods-Metron_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C7026195EAE05A4281D5A267322AD708 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				727F2F4A01C023A7BF26CEC8BDA78DF0 /* Metron.modulemap */,
+				FB0467CAF6DC322AE8CA46FA831A0CB9 /* Metron.xcconfig */,
+				9F2B8D4FB902C4CA8E5923AA7CA5E57C /* Metron-dummy.m */,
+				A56872AD4BA195A093763122AD211723 /* Metron-Info.plist */,
+				A64FA26ECE830364724ABC6713157EB7 /* Metron-prefix.pch */,
+				989C716686B526AD83A11076B5F43F57 /* Metron-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Metron";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				04E0605F34C505C2E004C31506554D59 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				616013D16E13A8EE1EB4B5120463D8D2 /* Pods */,
+				FCD0BE1BA078170733A303D5E991DC0D /* Products */,
+				B7C6AB09C72C8F5FC5E06DA0B5AFF6AE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E979C1EE009FD5AA4F5CE95A52224B1A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6F4EF1387067616F0080AB907E1EF41 /* SwiftHamcrest.modulemap */,
+				01F6DA909B6EA9D8F6571B3F3F62E958 /* SwiftHamcrest.xcconfig */,
+				F6BA2DD083FB2F78E9CA64A0F0CD650A /* SwiftHamcrest-dummy.m */,
+				C65BA0D621247C6A37F4EBC52E040622 /* SwiftHamcrest-Info.plist */,
+				9B2069D7E36390EC410C114829241271 /* SwiftHamcrest-prefix.pch */,
+				E6E5350B5610C5D6BA45229FE3BCC163 /* SwiftHamcrest-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHamcrest";
+			sourceTree = "<group>";
+		};
+		F7F1E8D067D500B6B4547C397AF363F7 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8D9CE19113ACB5524D3F9738C5868 /* CoordinateSystem.swift */,
+				E9FC12A8EEED281B842098229C92DE0D /* CornerPosition.swift */,
+				64D17D6A601D0E58F4FA1D4452FCB6CA /* Side.swift */,
+			);
+			name = Visual;
+			path = Visual;
+			sourceTree = "<group>";
+		};
+		FCD0BE1BA078170733A303D5E991DC0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D00C2AE5259FE6CAC897B6F466BC88A /* Hamcrest.framework */,
+				F4F40DD146AB731739ABC5A7C1E47560 /* Metron.framework */,
+				37A620DB8830C0A5B2EA3C35AAC43714 /* Pods_Metron_Example.framework */,
+				EEE90EB0AC40E1C593C23780BB19C45F /* Pods_Metron_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A481A15FA57EF51AA693FC983CE960D /* Headers */ = {
+		114D1A72C798754348E23E0C8731AF5E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6461BE95ACEECE38CC4AAD93BAA3ED7 /* SwiftHamcrest-umbrella.h in Headers */,
+				C63A0DDE4356A0926C2C2AB527953FB4 /* Pods-Metron_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29B85BF490EF8DC88A36905DDBA46B66 /* Headers */ = {
+		2BE34A73C473155BEDEE49DAD513D912 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4DD97009437591FF290CD37DB3EAD4 /* Pods-Metron_Example-umbrella.h in Headers */,
+				39AF7DD43ED1EB6BBCCE686E0E582266 /* Metron-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		983A47C74AC3F6E48A2C871D5FE78369 /* Headers */ = {
+		3F9F9CFDB75FD95C79D50950B453C10C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E63AEF58955451A02DC5658AB65C62 /* Metron-umbrella.h in Headers */,
+				24669D7F1EEAF4123B5FE363FFC20370 /* Pods-Metron_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D044629760B1E4A01546FF42DC734E71 /* Headers */ = {
+		78F9047742D7531C1E0A4F0A68C3D9C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A761DD95C786BBFD05C6ECC4547458 /* Pods-Metron_Tests-umbrella.h in Headers */,
+				87501573A570955B07BC5D7E67C341A7 /* SwiftHamcrest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		36118A88DCD6362DBB93DCD9FD415C2B /* Pods-Metron_Tests */ = {
+		3BEE30DCF2B9BA2CFCD604ECABF0981C /* Metron */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E6265C15E245A7E8985DCC315692144 /* Build configuration list for PBXNativeTarget "Pods-Metron_Tests" */;
+			buildConfigurationList = 78301F7D33CE3AD5A0F311675D783E66 /* Build configuration list for PBXNativeTarget "Metron" */;
 			buildPhases = (
-				6ECD95719BFF304977E57F2BD10FBC00 /* Sources */,
-				8DE5CF692038B0D9CF4098976DBE5648 /* Frameworks */,
-				D044629760B1E4A01546FF42DC734E71 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				73408B8E5047B2050B186664B88659D7 /* PBXTargetDependency */,
-				2D69F4EDB064871A07D53647F18E8F62 /* PBXTargetDependency */,
-			);
-			name = "Pods-Metron_Tests";
-			productName = "Pods-Metron_Tests";
-			productReference = 4E3E7963B9C808AE07845988219B2022 /* Pods_Metron_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5307FF2EE6D807853E75F42953219F9B /* SwiftHamcrest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAE07DD6A6053D5405F2E0914DEDA0CF /* Build configuration list for PBXNativeTarget "SwiftHamcrest" */;
-			buildPhases = (
-				6F9C644F19672B75489BE0890EC09110 /* Sources */,
-				592386A59BA61DE876C0419F7BB62918 /* Frameworks */,
-				1A481A15FA57EF51AA693FC983CE960D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftHamcrest;
-			productName = SwiftHamcrest;
-			productReference = 71D84004A8481BAA73AFC6D86AEDB1F1 /* Hamcrest.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		676E873D146F9679B19A178D6869FD35 /* Pods-Metron_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 866E807B55DC7495785E5BA0C7BF9DE8 /* Build configuration list for PBXNativeTarget "Pods-Metron_Example" */;
-			buildPhases = (
-				ACD368B14AB8214C53F9970F0109E201 /* Sources */,
-				2C4CD9D492C54D8A94A521170C8358A5 /* Frameworks */,
-				29B85BF490EF8DC88A36905DDBA46B66 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8C332C027D832A59F7E56D9D7B9ED709 /* PBXTargetDependency */,
-			);
-			name = "Pods-Metron_Example";
-			productName = "Pods-Metron_Example";
-			productReference = 498FC55244B801D8FE08851FEEED0686 /* Pods_Metron_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6EC0FA4E5E9EDC9A2BC00AA828A1B877 /* Metron */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F64E37364D3C2FE74FB773A14F4B67AA /* Build configuration list for PBXNativeTarget "Metron" */;
-			buildPhases = (
-				B3E245AFA3C4AF16A2648E664927E553 /* Sources */,
-				04C5F24230528B27F69753886F530A9B /* Frameworks */,
-				983A47C74AC3F6E48A2C871D5FE78369 /* Headers */,
+				2BE34A73C473155BEDEE49DAD513D912 /* Headers */,
+				6891FC9CDA8E6F699312D79242005278 /* Sources */,
+				2C98BD08A1E3445D1D965FBF72FC5F7E /* Frameworks */,
+				8A3CBFC521CEAE04AA78D81E7666F22E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -525,136 +482,227 @@
 			);
 			name = Metron;
 			productName = Metron;
-			productReference = 1B9B060BC58C54BAEEE7B5BC905D08B8 /* Metron.framework */;
+			productReference = F4F40DD146AB731739ABC5A7C1E47560 /* Metron.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DB3387A79790C158AC42BCC1BB55064 /* Pods-Metron_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64B119AE6731D00FA4376FEBC6912E54 /* Build configuration list for PBXNativeTarget "Pods-Metron_Tests" */;
+			buildPhases = (
+				114D1A72C798754348E23E0C8731AF5E /* Headers */,
+				8E379B0903A2D588E3E74779F777A905 /* Sources */,
+				7E2EA0717D40F430055F68872EF932C4 /* Frameworks */,
+				A96A3220BF8788E70FC2C6DD23A4D2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17E32C8F27413A61683A057C1E56C6F /* PBXTargetDependency */,
+				6D1A80BA234D7A2D2BCCD4846D536AAE /* PBXTargetDependency */,
+			);
+			name = "Pods-Metron_Tests";
+			productName = "Pods-Metron_Tests";
+			productReference = EEE90EB0AC40E1C593C23780BB19C45F /* Pods_Metron_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFA3C69CEEA7F1759CB1D925B1DF8DA2 /* SwiftHamcrest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E516D1E7B8225D6CB62ECB4F5B1549E0 /* Build configuration list for PBXNativeTarget "SwiftHamcrest" */;
+			buildPhases = (
+				78F9047742D7531C1E0A4F0A68C3D9C9 /* Headers */,
+				7D008A5BEB30F6529E956BECEE03F0B0 /* Sources */,
+				BDC805CF1793D2BD7DCEBDC57586E8E5 /* Frameworks */,
+				6A4E5CC29CC5D0F5AF8210245A7D3F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHamcrest;
+			productName = SwiftHamcrest;
+			productReference = 9D00C2AE5259FE6CAC897B6F466BC88A /* Hamcrest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F57C87FDADE7728EF62AA49E81A8D10F /* Pods-Metron_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7B724293B5C9DEE4F048171722B9D8 /* Build configuration list for PBXNativeTarget "Pods-Metron_Example" */;
+			buildPhases = (
+				3F9F9CFDB75FD95C79D50950B453C10C /* Headers */,
+				533E0B87111BA230CE71629FFCEF7CDB /* Sources */,
+				05E16A731345C8DFF648BA16041791DB /* Frameworks */,
+				6D1FDB347993DBD03350FF4E1D51407D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7CD741F028C936C81CC405B413F46C /* PBXTargetDependency */,
+			);
+			name = "Pods-Metron_Example";
+			productName = "Pods-Metron_Example";
+			productReference = 37A620DB8830C0A5B2EA3C35AAC43714 /* Pods_Metron_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7E2D50E683EAF31B697660035ABC3E4B /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FCD0BE1BA078170733A303D5E991DC0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6EC0FA4E5E9EDC9A2BC00AA828A1B877 /* Metron */,
-				676E873D146F9679B19A178D6869FD35 /* Pods-Metron_Example */,
-				36118A88DCD6362DBB93DCD9FD415C2B /* Pods-Metron_Tests */,
-				5307FF2EE6D807853E75F42953219F9B /* SwiftHamcrest */,
+				3BEE30DCF2B9BA2CFCD604ECABF0981C /* Metron */,
+				F57C87FDADE7728EF62AA49E81A8D10F /* Pods-Metron_Example */,
+				8DB3387A79790C158AC42BCC1BB55064 /* Pods-Metron_Tests */,
+				BFA3C69CEEA7F1759CB1D925B1DF8DA2 /* SwiftHamcrest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6A4E5CC29CC5D0F5AF8210245A7D3F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D1FDB347993DBD03350FF4E1D51407D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3CBFC521CEAE04AA78D81E7666F22E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96A3220BF8788E70FC2C6DD23A4D2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		6ECD95719BFF304977E57F2BD10FBC00 /* Sources */ = {
+		533E0B87111BA230CE71629FFCEF7CDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE4983EBEB6916A2D7A067402FE9E2E4 /* Pods-Metron_Tests-dummy.m in Sources */,
+				725BAA3235F0BEFE86D86B8C00BD3506 /* Pods-Metron_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9C644F19672B75489BE0890EC09110 /* Sources */ = {
+		6891FC9CDA8E6F699312D79242005278 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B366F70FA493EC7D3F0B5B336E87F5D /* ArithmeticMatchers.swift in Sources */,
-				8C1D25958A5413B8C82B79A29184BA4E /* BasicMatchers.swift in Sources */,
-				D0DCCDCA76634FF1108A522D2CA856FE /* Descriptions.swift in Sources */,
-				CB9202472ACE909CACF1A310BEECF49A /* DictionaryMatchers.swift in Sources */,
-				3EF0D2CBDDBA1D1B7B96F0202F94935E /* Hamcrest.swift in Sources */,
-				CBA30FABC2729AB9DCFC17FBC14FBA39 /* Matcher.swift in Sources */,
-				21A54296F1EB11D40A0AA97504C28D58 /* MatchResult.swift in Sources */,
-				7A47E51CEBA279C9A5796B6A4A345588 /* MetaMatchers.swift in Sources */,
-				347FA4F130A9CB7B6E3E809CFDA1CDAC /* OperatorMatchers.swift in Sources */,
-				B5EB4F4673FC5C8C5BF8ADFF981ECB22 /* ReflectionMatchers.swift in Sources */,
-				DB71DC7D229BCC5FF00D8CF5859B1EB7 /* SequenceMatchers.swift in Sources */,
-				5D878256C56C4E6CAE74003BB9D79811 /* StringMatchers.swift in Sources */,
-				D724370AAFFFF935FF7FAF0B416C034F /* SwiftHamcrest-dummy.m in Sources */,
+				B431A4F870F965642CC32976ED623B21 /* Angle.swift in Sources */,
+				28AC53FDED1BB01A56F3549B86308ED7 /* CGAffineTransform.swift in Sources */,
+				1C60058317196E2FDD2440679EE99585 /* CGPoint.swift in Sources */,
+				325AE7198D709824D503FB42DF8F3888 /* CGRect.swift in Sources */,
+				20A677B1DC5B00B6964E3F4536C9CF64 /* CGRectEdge.swift in Sources */,
+				274B5F7780C697AC6A869563A81799A4 /* CGSize.swift in Sources */,
+				0EA6B49D1C5BDF963998BBC1A1AA6CB1 /* CGVector.swift in Sources */,
+				2DBA8BD2ED5B5081D967FD95F551773E /* Circle.swift in Sources */,
+				C02E2DFC71AA9EF84CEFFB6A7EE981D0 /* CoordinateSystem.swift in Sources */,
+				4535DCB6C1E1190D06D54B92D41A63B6 /* Corner.swift in Sources */,
+				BA299BE8F67089A9445EB2895E6983DC /* CornerPosition.swift in Sources */,
+				1CECEC05F861E12CF508DFEF5AE8714C /* CornerType.swift in Sources */,
+				029272AF739D6F28B57406CBBFAA6ABF /* Drawable.swift in Sources */,
+				8C9234BBBE133E628F089F5FEAE6D69D /* EdgeType.swift in Sources */,
+				F7B9A39ECABF38E151F3AB587A73816B /* General.swift in Sources */,
+				9DCDE5686B31704EB8CF50C721A9AE8A /* Line.swift in Sources */,
+				64AFE3EF7A6F76D2D3BF4C2AC5DCA1DB /* LineSegment.swift in Sources */,
+				852F512606E08501D61F25BA2730B940 /* Metron-dummy.m in Sources */,
+				65953FDD9432680C3706C5398CAF5387 /* Opposable.swift in Sources */,
+				FC0564F7A6EA72011ABA58A49A04A9CE /* Polygon.swift in Sources */,
+				2C68EE85398598FBB307855B237329D5 /* PolygonType.swift in Sources */,
+				C47E9044CCC389B561980E14CCBBB1E5 /* Rotatable.swift in Sources */,
+				D1DC13F94BAC1BC81CAF0658EE439284 /* Shape.swift in Sources */,
+				AC7538DBC86D6D8AD829830D3233E78D /* Side.swift in Sources */,
+				DE146D933146D3091AC9DD3D487CBCA4 /* Square.swift in Sources */,
+				1BFDBE945D43FC4CF77025BFEB0A28D4 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD368B14AB8214C53F9970F0109E201 /* Sources */ = {
+		7D008A5BEB30F6529E956BECEE03F0B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBE265435CCD7A7AD34BCE131689FDA /* Pods-Metron_Example-dummy.m in Sources */,
+				569BA9BF2F80C0EFE63020D9ED7ED6DC /* ArithmeticMatchers.swift in Sources */,
+				3CEA3A6EB1A45040812B8AA02244E38D /* BasicMatchers.swift in Sources */,
+				DE1CAD8A1E8BCBF23575D2246742639B /* Descriptions.swift in Sources */,
+				C8B31F4BBB98F274986AB43DEACA055A /* DictionaryMatchers.swift in Sources */,
+				1A69A5E4D2946C71236AD49D36F1FB48 /* Hamcrest.swift in Sources */,
+				2160E94517632469C9B4218C1FD1446E /* Matcher.swift in Sources */,
+				646FE2A8A58355B6A91A1C79158EDE36 /* MatchResult.swift in Sources */,
+				6C2A3B2490AD34B9D1F7A22056ED6B7A /* MetaMatchers.swift in Sources */,
+				27E2AA85CE8E429893E977855B9C3342 /* OperatorMatchers.swift in Sources */,
+				4F3B85D91C54796C48B62E02F9CFB92F /* ReflectionMatchers.swift in Sources */,
+				80865988ADBB240CAC9724E345F3DA37 /* SequenceMatchers.swift in Sources */,
+				B6D652C08E8DD541C4CB7B55BE26FE1A /* StringMatchers.swift in Sources */,
+				51FF93E9A2089C7D4E753E90BB336D4D /* SwiftHamcrest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3E245AFA3C4AF16A2648E664927E553 /* Sources */ = {
+		8E379B0903A2D588E3E74779F777A905 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C16E253E3FD91BAD0598E553FCF87800 /* Angle.swift in Sources */,
-				4160C6BCD19567EF48F137AD1A245443 /* CGAffineTransform.swift in Sources */,
-				5A49584203CDA1B825B428594852DF6F /* CGPoint.swift in Sources */,
-				0A7D2BE7B3E72AFBDCFC10B0AADA9B06 /* CGRect.swift in Sources */,
-				FB709C1824AD52A7E5DF3E79CF0E3751 /* CGRectEdge.swift in Sources */,
-				3581B66EED7C3D18988AC7BE74FF7753 /* CGSize.swift in Sources */,
-				B2B62BF63045F5CD23F9873319C5D360 /* CGVector.swift in Sources */,
-				AB72927636E71791DA89FD33A0035C1D /* Circle.swift in Sources */,
-				984596675C20BF226CE416770F0DD048 /* CoordinateSystem.swift in Sources */,
-				CCA5DA1D8D0C4109E81894BB6DC727D1 /* Corner.swift in Sources */,
-				551D15512C96CC5B14D383693CD03DB8 /* CornerPosition.swift in Sources */,
-				A62E33DF63FFE4F7043FB03B3174713C /* CornerType.swift in Sources */,
-				E35A105A91962BCD334F9C391C1D1EF5 /* Drawable.swift in Sources */,
-				BAF36FC757D2075FB4B077B5633BF8C0 /* EdgeType.swift in Sources */,
-				00D0FC9D2D7C8D61E9EB3CCA66CC67AB /* General.swift in Sources */,
-				881C5D51157AFBB7AA955426A0B0E730 /* Line.swift in Sources */,
-				B90ED5F914C9F99BFAFF3E932FEFE967 /* LineSegment.swift in Sources */,
-				3A389A03F8800DB550F376B2847BFA69 /* Metron-dummy.m in Sources */,
-				AA3DE610011F8A60C4893EAA9C14D342 /* Opposable.swift in Sources */,
-				EDFDD7B2A464B50DD82019C243E61C0B /* Polygon.swift in Sources */,
-				6757A5E29964F91DE4BACC83DF931C4F /* PolygonType.swift in Sources */,
-				E7676E377E62F4C96168606CAF57020B /* Rotatable.swift in Sources */,
-				C7E52995A6E0EF2C4502A499F59E8268 /* Shape.swift in Sources */,
-				43AE78547B8172A8C93B3F46685BB427 /* Side.swift in Sources */,
-				7CE472CA2C79D8CA392DC7ACA82D382E /* Square.swift in Sources */,
-				EFC25F308962EF4C83EF01B6EBC512C6 /* Triangle.swift in Sources */,
+				AA039A9B750EABD9D0647D78295D6031 /* Pods-Metron_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D69F4EDB064871A07D53647F18E8F62 /* PBXTargetDependency */ = {
+		6D1A80BA234D7A2D2BCCD4846D536AAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftHamcrest;
-			target = 5307FF2EE6D807853E75F42953219F9B /* SwiftHamcrest */;
-			targetProxy = EAB3AEFCFCD6548CEC74945DD3C962AC /* PBXContainerItemProxy */;
+			target = BFA3C69CEEA7F1759CB1D925B1DF8DA2 /* SwiftHamcrest */;
+			targetProxy = DE30B3F8D3941C5ADA3876D7AA122975 /* PBXContainerItemProxy */;
 		};
-		73408B8E5047B2050B186664B88659D7 /* PBXTargetDependency */ = {
+		EC7CD741F028C936C81CC405B413F46C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Metron;
-			target = 6EC0FA4E5E9EDC9A2BC00AA828A1B877 /* Metron */;
-			targetProxy = A7D7B55AF061F72049CBDB80A60B67D3 /* PBXContainerItemProxy */;
+			target = 3BEE30DCF2B9BA2CFCD604ECABF0981C /* Metron */;
+			targetProxy = 7C842384558B4EB807C0B1CECC511077 /* PBXContainerItemProxy */;
 		};
-		8C332C027D832A59F7E56D9D7B9ED709 /* PBXTargetDependency */ = {
+		F17E32C8F27413A61683A057C1E56C6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Metron;
-			target = 6EC0FA4E5E9EDC9A2BC00AA828A1B877 /* Metron */;
-			targetProxy = 7CC2746EF9DB60A19E5445E18FBCAA04 /* PBXContainerItemProxy */;
+			target = 3BEE30DCF2B9BA2CFCD604ECABF0981C /* Metron */;
+			targetProxy = F2194EC8A7AAE2155AF867693C6FAE2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1879EEC23D7D62801D6D132E0346C54D /* Release */ = {
+		35C88E48CADD65A847C842246C86171D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2C03710041F96F7C26B83B5FCBE833D /* Pods-Metron_Example.release.xcconfig */;
+			baseConfigurationReference = 39234B205D1D13D563C0549E1F98A5AF /* Pods-Metron_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -665,9 +713,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Example/Pods-Metron_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Metron_Example/Pods-Metron_Example.modulemap";
@@ -675,10 +723,9 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Metron_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -686,10 +733,11 @@
 			};
 			name = Release;
 		};
-		1C4FA4953ADD410CC51B51EEBB773379 /* Debug */ = {
+		408CA34C1E39C75560BA906343067BC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 971CDA4F14B31D74715EF1787D2A4730 /* Pods-Metron_Tests.debug.xcconfig */;
+			baseConfigurationReference = FB0467CAF6DC322AE8CA46FA831A0CB9 /* Metron.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -700,9 +748,45 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Metron/Metron-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Metron/Metron-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Metron/Metron.modulemap";
+				PRODUCT_MODULE_NAME = Metron;
+				PRODUCT_NAME = Metron;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42CAAD0B0F30E09AB211B6A890FA6594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28E191322A77FEC233E28F8DE618CAE /* Pods-Metron_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests.modulemap";
@@ -710,18 +794,16 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Metron_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1CDAB5613991E411E5990BAF694995C5 /* Debug */ = {
+		5293A7635AFC64F86992EBEDA05DF2C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -731,10 +813,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -742,6 +826,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -750,7 +835,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -770,21 +854,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		1FB1983C74043303F5C36BDBBBEA051D /* Debug */ = {
+		54A4CE6E25EB1D8F68A05B706CBF3732 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE834AF05656A6A9192649F24EBBCDEB /* SwiftHamcrest.xcconfig */;
+			baseConfigurationReference = 01F6DA909B6EA9D8F6571B3F3F62E958 /* SwiftHamcrest.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -796,49 +883,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftHamcrest/SwiftHamcrest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHamcrest/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/SwiftHamcrest/SwiftHamcrest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftHamcrest/SwiftHamcrest.modulemap";
+				PRODUCT_MODULE_NAME = Hamcrest;
 				PRODUCT_NAME = Hamcrest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		29046F343994D2845AEA50F73C2AE4AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE834AF05656A6A9192649F24EBBCDEB /* SwiftHamcrest.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHamcrest/SwiftHamcrest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHamcrest/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHamcrest/SwiftHamcrest.modulemap";
-				PRODUCT_NAME = Hamcrest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -846,7 +901,40 @@
 			};
 			name = Release;
 		};
-		7B62A85C412D689EF418FA67DA770A41 /* Release */ = {
+		A45CAE0D9A70855FFBDC627CBECA1E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F6DA909B6EA9D8F6571B3F3F62E958 /* SwiftHamcrest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHamcrest/SwiftHamcrest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHamcrest/SwiftHamcrest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHamcrest/SwiftHamcrest.modulemap";
+				PRODUCT_MODULE_NAME = Hamcrest;
+				PRODUCT_NAME = Hamcrest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5FB80C46B67F97AC1FA23920D33320E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -856,10 +944,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -867,6 +957,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -875,7 +966,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -892,19 +982,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		9715659C84665838B653B0C747FDC1C5 /* Release */ = {
+		CE6A97BEA3616278711D8AB6BC7AAB10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F4D62D511929BD498A18CD2F0E98069 /* Metron.xcconfig */;
+			baseConfigurationReference = 5C056568540039C510F51CDA96C3A0D7 /* Pods-Metron_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -915,109 +1011,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/Metron/Metron-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Metron/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Example/Pods-Metron_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Metron/Metron.modulemap";
-				PRODUCT_NAME = Metron;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C84F22663B42F4287C396D12AA2F3575 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F4D62D511929BD498A18CD2F0E98069 /* Metron.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/Metron/Metron-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Metron/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Metron/Metron.modulemap";
-				PRODUCT_NAME = Metron;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CDD58687CB26F3CF86A0E4D1BDB754A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DA48D0F12ED5A3CA61AC8716B78C5F /* Pods-Metron_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Metron_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D85FC77978B0451AE690D0D74D8D8D61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49928C95B3960F6F573B39DAD763E85F /* Pods-Metron_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Metron_Example/Pods-Metron_Example.modulemap";
@@ -1025,66 +1021,134 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Metron_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		DAEF9769BB57C31A41EFA7AEBAB0F8B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0467CAF6DC322AE8CA46FA831A0CB9 /* Metron.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Metron/Metron-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Metron/Metron-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Metron/Metron.modulemap";
+				PRODUCT_MODULE_NAME = Metron;
+				PRODUCT_NAME = Metron;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2ADA3209AE6CF23A9888D58310D4235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6188DD287DDE38D7C7CAC3B7F40AE2D /* Pods-Metron_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Metron_Tests/Pods-Metron_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CDAB5613991E411E5990BAF694995C5 /* Debug */,
-				7B62A85C412D689EF418FA67DA770A41 /* Release */,
+				5293A7635AFC64F86992EBEDA05DF2C3 /* Debug */,
+				B5FB80C46B67F97AC1FA23920D33320E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		866E807B55DC7495785E5BA0C7BF9DE8 /* Build configuration list for PBXNativeTarget "Pods-Metron_Example" */ = {
+		64B119AE6731D00FA4376FEBC6912E54 /* Build configuration list for PBXNativeTarget "Pods-Metron_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D85FC77978B0451AE690D0D74D8D8D61 /* Debug */,
-				1879EEC23D7D62801D6D132E0346C54D /* Release */,
+				42CAAD0B0F30E09AB211B6A890FA6594 /* Debug */,
+				E2ADA3209AE6CF23A9888D58310D4235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E6265C15E245A7E8985DCC315692144 /* Build configuration list for PBXNativeTarget "Pods-Metron_Tests" */ = {
+		6C7B724293B5C9DEE4F048171722B9D8 /* Build configuration list for PBXNativeTarget "Pods-Metron_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C4FA4953ADD410CC51B51EEBB773379 /* Debug */,
-				CDD58687CB26F3CF86A0E4D1BDB754A1 /* Release */,
+				CE6A97BEA3616278711D8AB6BC7AAB10 /* Debug */,
+				35C88E48CADD65A847C842246C86171D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAE07DD6A6053D5405F2E0914DEDA0CF /* Build configuration list for PBXNativeTarget "SwiftHamcrest" */ = {
+		78301F7D33CE3AD5A0F311675D783E66 /* Build configuration list for PBXNativeTarget "Metron" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FB1983C74043303F5C36BDBBBEA051D /* Debug */,
-				29046F343994D2845AEA50F73C2AE4AD /* Release */,
+				DAEF9769BB57C31A41EFA7AEBAB0F8B7 /* Debug */,
+				408CA34C1E39C75560BA906343067BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F64E37364D3C2FE74FB773A14F4B67AA /* Build configuration list for PBXNativeTarget "Metron" */ = {
+		E516D1E7B8225D6CB62ECB4F5B1549E0 /* Build configuration list for PBXNativeTarget "SwiftHamcrest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C84F22663B42F4287C396D12AA2F3575 /* Debug */,
-				9715659C84665838B653B0C747FDC1C5 /* Release */,
+				A45CAE0D9A70855FFBDC627CBECA1E49 /* Debug */,
+				54A4CE6E25EB1D8F68A05B706CBF3732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

@@ -9,9 +9,7 @@ public extension CGRect {
     }
     
     public init(center: CGPoint, size: CGSize) {
-        let halfSize = size * 0.5
-        self.origin = CGPoint(x: center.x - halfSize.width, y: center.y - halfSize.height)
-        self.size = size
+        self.init(origin: CGPoint(x: center.x - size.width / 2, y: center.y - size.height / 2), size: size)
     }
     
     public init(origin: CGPoint, edges: CGFloat) {

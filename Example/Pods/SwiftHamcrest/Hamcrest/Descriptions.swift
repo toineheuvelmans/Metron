@@ -35,7 +35,7 @@ public func describeMismatch<T>(_ value: T, _ description: String, _ mismatchDes
 }
 
 func describeActualValue<T>(_ value: T, _ mismatchDescription: String?) -> String {
-    return describe(value) + (mismatchDescription.map{" (\($0))"} ?? "")
+    return describe(value) + (mismatchDescription.map {" (\($0))"} ?? "")
 }
 
 func joinDescriptions(_ descriptions: [String]) -> String {
@@ -57,7 +57,7 @@ func joinMatcherDescriptions<S: Sequence, T>(_ matchers: S, prefix: String = "al
 }
 
 private func joinStrings(_ strings: [String]) -> String {
-    switch (strings.count) {
+    switch strings.count {
     case 1:
         return strings[0]
     default:
