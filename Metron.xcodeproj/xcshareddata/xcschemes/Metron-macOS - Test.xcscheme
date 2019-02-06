@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52D6D9EF1BEFFFBE002C0205"
-               BuildableName = "Metron.framework"
-               BlueprintName = "Metron-tvOS"
+               BlueprintIdentifier = "E62C8DD5221077DC00E0A783"
+               BuildableName = "Metron-macOS - Test.xctest"
+               BlueprintName = "Metron-macOS - Test"
                ReferencedContainer = "container:Metron.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD75028C1C690C7A006590AF"
-               BuildableName = "Metron-tvOS Tests.xctest"
-               BlueprintName = "Metron-tvOS Tests"
+               BlueprintIdentifier = "E62C8DD5221077DC00E0A783"
+               BuildableName = "Metron-macOS - Test.xctest"
+               BlueprintName = "Metron-macOS - Test"
                ReferencedContainer = "container:Metron.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D9EF1BEFFFBE002C0205"
-            BuildableName = "Metron.framework"
-            BlueprintName = "Metron-tvOS"
-            ReferencedContainer = "container:Metron.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D9EF1BEFFFBE002C0205"
-            BuildableName = "Metron.framework"
-            BlueprintName = "Metron-tvOS"
+            BlueprintIdentifier = "E62C8DD5221077DC00E0A783"
+            BuildableName = "Metron-macOS - Test.xctest"
+            BlueprintName = "Metron-macOS - Test"
             ReferencedContainer = "container:Metron.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,15 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D9EF1BEFFFBE002C0205"
-            BuildableName = "Metron.framework"
-            BlueprintName = "Metron-tvOS"
-            ReferencedContainer = "container:Metron.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -5,5 +5,5 @@ import PackageDescription
 let package = Package(
     name: "Metron",
     products: [.library(name: "Metron", targets: ["Metron"])],
-    targets: [.target(name: "Metron", dependencies: [], path: "./Metron")]
+    targets: [.target(name: "Metron", dependencies: [], path: "./source/Metron", exclude: ["Test"])]
 )
