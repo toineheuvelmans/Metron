@@ -6,8 +6,8 @@ import CoreGraphics
  */
 public protocol EdgeType {
     associatedtype CornerType
-    
+
     var corners: (CornerType, CornerType) { get }
-    
+
     var axis: Axis { get }
 }

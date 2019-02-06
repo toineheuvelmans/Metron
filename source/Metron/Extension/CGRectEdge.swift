@@ -1,15 +1,15 @@
 import CoreGraphics
 
-extension CGRectEdge : Opposable {
+extension CGRectEdge: Opposable {
     public static var allOpposites: [(CGRectEdge, CGRectEdge)] {
         return [(.minXEdge, .maxXEdge), (.minYEdge, .maxYEdge)]
     }
 }
 
-extension CGRectEdge : EdgeType {
-    
+extension CGRectEdge: EdgeType {
+
     public typealias CornerType = Corner
-    
+
     public var corners: (CornerType, CornerType) {
         switch self {
         case .minXEdge: return (.minXminY, .minXmaxY)
@@ -18,7 +18,7 @@ extension CGRectEdge : EdgeType {
         case .maxYEdge: return (.minXmaxY, .maxXmaxY)
         }
     }
-    
+
     public var axis: Axis {
         switch self {
         case .minXEdge, .maxXEdge: return .xAxis
@@ -27,7 +27,7 @@ extension CGRectEdge : EdgeType {
     }
 }
 
-extension CGRectEdge : CustomDebugStringConvertible {
+extension CGRectEdge: CustomDebugStringConvertible {
     public var debugDescription: String {
         switch self {
         case .minXEdge: return "minXEdge"

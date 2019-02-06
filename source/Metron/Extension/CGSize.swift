@@ -1,24 +1,24 @@
 import CoreGraphics
 
 public extension CGSize {
-    
+
     public init(edges length: CGFloat) {
         self.init(width: length, height: length)
     }
-    
+
     public var area: CGFloat {
         return width * height
     }
-    
+
     /// - returns: A `CGSize` with width and height swapped.
     public var swapped: CGSize {
         return CGSize(width: height, height: width)
     }
-    
+
     /// Limits the size to the given size.
     public func clipped(to size: CGSize) -> CGSize {
         return CGSize(width: min(width, size.width),
-                      height: min(height, size.height))
+            height: min(height, size.height))
     }
 }
 

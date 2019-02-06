@@ -5,7 +5,7 @@ import CoreGraphics
  */
 public protocol CornerType {
     associatedtype EdgesType
-    
+
     var edges: (EdgesType, EdgesType) { get }
 }
 
@@ -20,7 +20,7 @@ public enum Corner {
 }
 
 public extension Corner {
-    
+
     public init(x xEdge: CGRectEdge, y yEdge: CGRectEdge) {
         switch (xEdge, yEdge) {
         case (.minXEdge, .minYEdge): self = .minXminY
@@ -39,7 +39,7 @@ public extension Corner {
         case .yAxis: return yEdge
         }
     }
-    
+
     /// - returns: The `xAxis` edge component of this corner
     /// (either `minXEdge` or `maxXEdge`).
     public var xEdge: CGRectEdge {
@@ -48,7 +48,7 @@ public extension Corner {
         case .maxXminY, .maxXmaxY: return .maxXEdge
         }
     }
-    
+
     /// - returns: The `yAxis` edge component of this corner
     /// (either `minYEdge` or `maxYEdge`).
     public var yEdge: CGRectEdge {
@@ -57,7 +57,7 @@ public extension Corner {
         case .minXmaxY, .maxXmaxY: return .maxYEdge
         }
     }
-    
+
     /// - returns: The `Corner` that is opposite along the given axis.
     /// For example, the `minXminY` corner's opposite along
     /// the `xAxis` is `maxXminY`.
@@ -71,7 +71,7 @@ public extension Corner {
 
 // MARK: Opposable
 
-extension Corner : Opposable {
+extension Corner: Opposable {
     public static var allOpposites: [(Corner, Corner)] {
         return [(.minXminY, .maxXmaxY), (.maxXminY, .minXmaxY)]
     }
@@ -79,9 +79,9 @@ extension Corner : Opposable {
 
 // MARK: CornerType
 
-extension Corner : CornerType {
+extension Corner: CornerType {
     public typealias EdgesType = CGRectEdge
-    
+
     public var edges: (EdgesType, EdgesType) {
         return (xEdge, yEdge)
     }

@@ -4,7 +4,7 @@
  */
 public enum CornerPosition {
     case topLeft, bottomLeft, topRight, bottomRight
-    
+
     public init(x xSide: Side, y ySide: Side) {
         switch (xSide, ySide) {
         case (.left, .top): self = .topLeft
@@ -14,7 +14,7 @@ public enum CornerPosition {
         default: fatalError("Incorrect side axis")
         }
     }
-    
+
     /// A corner represents two sides meeting.
     /// This returns the side for the given axis
     /// (e.g. `left` or `right` for the `xAxis`).
@@ -24,7 +24,7 @@ public enum CornerPosition {
         case .yAxis: return ySide
         }
     }
-    
+
     /// This returns the side for the `xAxis`.
     /// (`left` or `right`).
     public var xSide: Side {
@@ -33,7 +33,7 @@ public enum CornerPosition {
         case .topRight, .bottomRight: return .right
         }
     }
-    
+
     /// This returns the side for the `yAxis`.
     /// (`top` or `bottom`).
     public var ySide: Side {
@@ -42,7 +42,7 @@ public enum CornerPosition {
         case .bottomLeft, .bottomRight: return .bottom
         }
     }
-    
+
     /// - returns: The `CornerPosition` that is opposite along the given axis.
     /// For example, the `topLeft` corner's opposite along
     /// the `xAxis` is `topRight`.
@@ -54,15 +54,15 @@ public enum CornerPosition {
     }
 }
 
-extension CornerPosition : Rotatable {
+extension CornerPosition: Rotatable {
     public static var allOpposites: [(CornerPosition, CornerPosition)] {
         return [(.topLeft, .bottomRight), (.topRight, .bottomLeft)]
     }
 }
 
-extension CornerPosition : CornerType {
+extension CornerPosition: CornerType {
     public typealias EdgesType = Side
-    
+
     public var edges: (Side, Side) {
         return (xSide, ySide)
     }

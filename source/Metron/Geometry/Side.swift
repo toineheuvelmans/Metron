@@ -6,16 +6,16 @@ public enum Side {
     case top, right, bottom, left
 }
 
-extension Side : Rotatable {
+extension Side: Rotatable {
     public static var allOpposites: [(Side, Side)] {
         return [(.top, .bottom), (.right, .left)]
     }
 }
 
-extension Side : EdgeType {
-    
+extension Side: EdgeType {
+
     public typealias CornerType = CornerPosition
-    
+
     public var corners: (CornerType, CornerType) {
         switch self {
         case .top: return (.topLeft, .topRight)
@@ -24,7 +24,7 @@ extension Side : EdgeType {
         case .left: return (.topLeft, .bottomLeft)
         }
     }
-    
+
     public var axis: Axis {
         switch self {
         case .left, .right: return .xAxis

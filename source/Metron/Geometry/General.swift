@@ -8,12 +8,12 @@ extension Comparable {
     public func clipped(_ minValue: Self, _ maxValue: Self) -> Self {
         return max(minValue, min(self, maxValue))
     }
-    
+
     /// - returns: true if the value is between the 
     /// provided lower and upper limits.
     public func between(lower: Self, upper: Self) -> Bool {
         return self >= min(lower, upper) &&
-               self <= max(lower, upper)
+        self <= max(lower, upper)
     }
 }
 
