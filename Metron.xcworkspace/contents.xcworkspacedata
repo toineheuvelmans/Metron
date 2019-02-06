@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Metron.playground">
+      location = "container:Metron.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:Metron.xcodeproj">
+      location = "container:Metron-iOS.playground">
    </FileRef>
 </Workspace>

@@ -1,4 +1,4 @@
-import Metron   //  If you get a build error on this line, try building for a Simulator device
+import Metron // 🧨 If you get a build error on this line, try building for a Simulator device!
 import UIKit
 
 // MARK: Playgrounds
@@ -17,7 +17,6 @@ public extension Metron.Drawable {
 //extension Triangle : CustomPlaygroundQuickLookable {}
 //extension Square : CustomPlaygroundQuickLookable {}
 extension Metron.Polygon : CustomPlaygroundQuickLookable {}
-
 
 public extension Int {
     public func `do`(_ block: () -> ()) {

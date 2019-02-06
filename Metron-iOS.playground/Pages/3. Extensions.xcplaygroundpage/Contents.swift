@@ -5,6 +5,7 @@
  Metron also extends the basic CoreGraphics types CGPoint, CGVector, CGSize, CGRect and CGRectEdge. It offers a range of new initializers, as well as numerous common properties.
 */
 
+import CoreGraphics
 import Metron
 
 /*: CGPoint
