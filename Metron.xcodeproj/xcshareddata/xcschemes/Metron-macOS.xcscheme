@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD7502791C68FCFC006590AF"
-               BuildableName = "Metron-macOS Tests.xctest"
-               BlueprintName = "Metron-macOS Tests"
+               BlueprintIdentifier = "E62C8DD5221077DC00E0A783"
+               BuildableName = "Metron-macOS - Test.xctest"
+               BlueprintName = "Metron-macOS - Test"
                ReferencedContainer = "container:Metron.xcodeproj">
             </BuildableReference>
          </TestableReference>
