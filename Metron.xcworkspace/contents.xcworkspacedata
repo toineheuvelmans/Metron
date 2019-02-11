@@ -5,6 +5,6 @@
       location = "container:Metron.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:Metron-iOS.playground">
+      location = "container:Playground.playground">
    </FileRef>
 </Workspace>
