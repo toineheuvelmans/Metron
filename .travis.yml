@@ -1,17 +1,59 @@
 # http://blog.tgrrtt.com/exploring-the-travisci-configuration-file
-# Todo: Don't forget to update iOS, tvOS and watchOS schemes for testing once tests are available.
+# https://docs.travis-ci.com/user/build-stages
+# https://github.com/mxcl/PromiseKit/blob/master/.travis.yml
 
-language: objective-c
+os: osx
 osx_image: xcode10.1
-cache: cocoapods
-before_install:
-  - gem install cocoapods # Since Travis is not always on latest version…
-script:
-  - set -o pipefail
-  - travis_retry swift test
-  - travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Demo" build CODE_SIGN_IDENTITY="" | xcpretty
-  - travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Metron-iOS" build | xcpretty
-  - travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Metron-macOS" build-for-testing test | xcpretty
-  - travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Metron-tvOS" build | xcpretty
-  - travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Metron-watchOS" build | xcpretty
-  - pod lib lint
+language: objective-c
+
+stages:
+  - name: compile
+  - name: test
+
+jobs:
+  include:
+
+    # Compile
+
+    - stage: compile
+      name: SwiftPM
+      script: travis_retry swift build
+
+    - name: Carthage
+      script: travis_retry carthage build --no-skip-current --configuration Release
+
+    - name: CocoaPods (pod lib lint)
+      cache: cocoapods
+      install: gem install cocoapods # Since Travis is not always on latest version…
+      script: travis_retry pod lib lint
+
+    - name: Xcode (Demo)
+      script: travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Demo" build | xcpretty
+
+    # Test
+
+    - stage: test
+      name: SwiftPM
+      before_script: set -exo pipefail
+      script: travis_retry swift test
+
+    - &xcode
+      stage: test
+      name: Xcode (iOS)
+      env: DST='OS=12.1,name=iPhone SE'
+      before_install: gem install xcpretty
+      before_script: set -exo pipefail
+      script: travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Metron - Test" -destination "$DST" build-for-testing test | xcpretty
+
+    - <<: *xcode
+      name: Xcode (macOS)
+      env: DST='platform=OS X,arch=x86_64'
+
+    - <<: *xcode
+      name: Xcode (tvOS)
+      env: DST='OS=12.1,name=Apple TV'
+
+    # ⚠️ Apparently watchOS targets don't support testing and there's no XCTest available for the platform…
+    # - <<: *xcode
+    #   name: Xcode (watchOS)
+    #   env: DST='OS=5.1,name=Apple Watch Series 4 - 44mm'

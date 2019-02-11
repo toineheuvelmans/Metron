@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
+               BlueprintIdentifier = "52D6DA0E1BF000BD002C0205"
                BuildableName = "Metron.framework"
-               BlueprintName = "Metron-iOS"
+               BlueprintName = "Metron"
                ReferencedContainer = "container:Metron.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,13 +29,23 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E62C8DD5221077DC00E0A783"
+               BuildableName = "Metron - Test.xctest"
+               BlueprintName = "Metron - Test"
+               ReferencedContainer = "container:Metron.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
+            BlueprintIdentifier = "52D6DA0E1BF000BD002C0205"
             BuildableName = "Metron.framework"
-            BlueprintName = "Metron-iOS"
+            BlueprintName = "Metron"
             ReferencedContainer = "container:Metron.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
+            BlueprintIdentifier = "52D6DA0E1BF000BD002C0205"
             BuildableName = "Metron.framework"
-            BlueprintName = "Metron-iOS"
+            BlueprintName = "Metron"
             ReferencedContainer = "container:Metron.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -73,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
+            BlueprintIdentifier = "52D6DA0E1BF000BD002C0205"
             BuildableName = "Metron.framework"
-            BlueprintName = "Metron-iOS"
+            BlueprintName = "Metron"
             ReferencedContainer = "container:Metron.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
