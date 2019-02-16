@@ -3,7 +3,7 @@ import Metron
 
 /*: Corner
  # Corner
- A `Corner` represents a place where two edges meet.
+ Represents a location where two edges meet.
  */
 
 let corner = Corner(x: .minXEdge, y: .minYEdge)

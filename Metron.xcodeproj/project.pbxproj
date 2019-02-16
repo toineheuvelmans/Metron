@@ -231,10 +231,10 @@
 		17FD09AC3D0F9F8AAF80AED1 /* Metron */ = {
 			isa = PBXGroup;
 			children = (
-				17FD05335FE02F25CE9B9A6A /* Shape */,
-				17FD0B9537BC88CFA4B2DCF7 /* Test */,
 				17FD06B4668E21DF1FFE7EFD /* Extension */,
 				17FD028C470E731A19337863 /* Geometry */,
+				17FD05335FE02F25CE9B9A6A /* Shape */,
+				17FD0B9537BC88CFA4B2DCF7 /* Test */,
 			);
 			path = Metron;
 			sourceTree = "<group>";

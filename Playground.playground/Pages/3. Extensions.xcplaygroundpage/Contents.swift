@@ -1,7 +1,6 @@
 /*: Extensions
  
  # Extensions
- 
  Metron also extends the basic CoreGraphics types CGPoint, CGVector, CGSize, CGRect and CGRectEdge. It offers a range of new initializers, as well as numerous common properties.
 */
 
@@ -23,7 +22,6 @@ point1.clipped(to: clipRect)
 let containerRect = CGRect(origin: CGPoint(x: 2.0, y: 2.0), size: CGSize(width: 5.0, height: 5.0))
 point1.position(in: containerRect)
 point1.normalizedPosition(in: containerRect)
-
 
 let line = Line(slope: 0.0, yIntercept: 4.75)
 point1.isAt(line: line)
@@ -89,7 +87,6 @@ let rect6d = CGRect(size: rectSize, origin: rectPoint, inCorner: .maxXmaxY)
 
 let rect7 = CGRect(aspectFitSize: rectSize, inRect: rect3)
 let rect8 = CGRect(aspectFillSize: rectSize, inRect: rect3)
-
 
 rect8.edge(.minXEdge)
 rect8.edge(.maxXEdge)

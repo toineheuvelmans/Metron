@@ -3,7 +3,7 @@ import Metron
 
 /*: LineSegment
  # LineSegment
- This represents a straight line between two points.
+ Represents a straight line between two points.
  */
 
 let lineSegment1 = LineSegment(a: CGPoint(x: 0.0, y: 2.0), b: CGPoint(x: 10.0, y: 5.0))
