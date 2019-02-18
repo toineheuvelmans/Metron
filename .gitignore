@@ -19,6 +19,9 @@ DerivedData
 *.hmap
 *.ipa
 
+# Swift PM
+.build
+
 # Bundler
 .bundle
 
@@ -31,3 +34,6 @@ Carthage
 # `pod install` in .travis.yml
 #
 # Pods/
+
+# AppCode
+.idea

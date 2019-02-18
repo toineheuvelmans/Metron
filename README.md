@@ -1,4 +1,4 @@
-![](assets/metron_header.jpg)
+![](documentation/asset/metron_header.jpg)
 
 [![Version](https://img.shields.io/cocoapods/v/Metron.svg?style=flat)](http://cocoapods.org/pods/Metron)
 [![License](https://img.shields.io/cocoapods/l/Metron.svg?style=flat)](http://cocoapods.org/pods/Metron)
