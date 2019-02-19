@@ -10,8 +10,12 @@ let package = Package(
     products: [
         .library(name: "Metron", targets: ["Metron"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/Quick/Nimble.git", from: "7.0.0"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "1.0.0"),
+    ],
     targets: [
         .target(name: "Metron", dependencies: [], path: "./source/Metron", exclude: ["Test"]),
-        .testTarget(name: "Metron-Test", dependencies: ["Metron"], path: "./source/Metron/Test")
+        .testTarget(name: "Metron-Test", dependencies: ["Metron", "Quick", "Nimble"], path: "./source/Metron/Test")
     ]
 )

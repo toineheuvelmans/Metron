@@ -6,6 +6,10 @@ os: osx
 osx_image: xcode10.1
 language: objective-c
 
+cache:
+  directories:
+    - Carthage
+
 stages:
   - name: compile
   - name: test
@@ -41,7 +45,7 @@ jobs:
       stage: test
       name: Xcode (iOS)
       env: DST='OS=12.1,name=iPhone SE'
-      before_install: gem install xcpretty
+      before_install: gem install xcpretty && carthage bootstrap
       before_script: set -exo pipefail
       script: travis_retry xcodebuild -workspace "Metron.xcworkspace" -scheme "Metron - Test" -destination "$DST" build-for-testing test | xcpretty
 

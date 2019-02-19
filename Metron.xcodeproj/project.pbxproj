@@ -87,8 +87,10 @@
 		17FD0751C5FCD2B07B89A60D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17FD07BF55AABC0EC035FF9D /* Polygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
 		17FD080C7F1546FE17CC1B58 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		17FD081C53F927C55BDAD4F1 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		17FD0831AAC5C44F524F7338 /* DrawableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableSource.swift; sourceTree = "<group>"; };
 		17FD09361D239018E7F80B7D /* CoordinateSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
+		17FD09A918705369112BEB5A /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = "<group>"; };
 		17FD0A791594A70D71666E4A /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		17FD0AF899F33DC0960258AB /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		17FD0AFB0E6B9F7C1F9EA618 /* Demo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Demo.plist; sourceTree = "<group>"; };
@@ -264,6 +266,8 @@
 				17FD0526F1A90AB4E7F12214 /* source */,
 				17FD021AFE1647FAF3A88836 /* .gitignore */,
 				17FD0DC842E479E8FF85A43B /* .travis.yml */,
+				17FD081C53F927C55BDAD4F1 /* Cartfile.private */,
+				17FD09A918705369112BEB5A /* Cartfile.resolved */,
 				17FD0F8136215EFECD635675 /* Metron.podspec */,
 				17FD0AF899F33DC0960258AB /* Package.swift */,
 				17FD0DDBF7AADC02B5A70AD5 /* README.md */,
@@ -651,7 +655,16 @@
 		E62C8DDE221077DC00E0A783 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = "$(SRCROOT)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*]" = "$(SRCROOT)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(SRCROOT)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(SRCROOT)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac";
 				INFOPLIST_FILE = "$(inherited)/Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -660,7 +673,16 @@
 		E62C8DDF221077DC00E0A783 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = "$(SRCROOT)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*]" = "$(SRCROOT)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(SRCROOT)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(SRCROOT)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac";
 				INFOPLIST_FILE = "$(inherited)/Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
