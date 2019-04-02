@@ -118,7 +118,7 @@ extension LineSegment: Drawable {
         let path = CGMutablePath()
         path.move(to: self.a)
         path.addLine(to: self.b)
-        return path.copy()
+        return path
     }
 }
 

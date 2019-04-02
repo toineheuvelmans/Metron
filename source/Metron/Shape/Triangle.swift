@@ -287,9 +287,8 @@ extension Triangle: Drawable {
         path.move(to: vertices.a)
         path.addLine(to: vertices.b)
         path.addLine(to: vertices.c)
-
         path.closeSubpath()
-        return path.copy()
+        return path
     }
 }
 
