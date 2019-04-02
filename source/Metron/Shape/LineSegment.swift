@@ -51,16 +51,18 @@ public extension LineSegment {
         return minX == maxX
     }
 
-    /// - returns: true when the provided point is on this lineSegment's line and 
-    /// between its points.
+    /// - returns: true when the provided point is on this lineSegment's line and between its points.
     /// - note: An error margin of 1e-12 is allowed.
     public func contains(_ point: CGPoint) -> Bool {
-        if isVertical {
-            return point.x == minX && point.y.between(lower: a.y, upper: b.y)
-        }
-        return line.contains(point) &&
-            point.x.between(lower: a.x, upper: b.x) &&
-            point.y.between(lower: a.y, upper: b.y)
+        if isVertical { return point.x == minX && point.y.between(lower: a.y, upper: b.y) }
+        return line.contains(point) && point.x.between(lower: a.x, upper: b.x) && point.y.between(lower: a.y, upper: b.y)
+    }
+
+
+    /// - returns: true if the line segment is connected with the other line segment, that is if one of the points
+    ///            of the segment matches one of the points of other segment.
+    public func connects(with lineSegment: LineSegment) -> Bool {
+        return self.a == lineSegment.b || self.b == lineSegment.a || self.a == lineSegment.a || self.b == lineSegment.b
     }
 
     /// - returns: The start and end points of this `LineSegment` as an array.
@@ -70,8 +72,7 @@ public extension LineSegment {
 
     /// - returns: The point halfway A->B.
     public var midpoint: CGPoint {
-        return CGPoint(x: (a.x + b.x) / 2.0,
-            y: (a.y + b.y) / 2.0)
+        return CGPoint(x: (a.x + b.x) / 2.0, y: (a.y + b.y) / 2.0)
     }
 
     /// - returns: The length of this `LineSegment`, i.e. the distance from A to B.
@@ -86,17 +87,14 @@ public extension LineSegment {
 
     /// - returns: The intersection of this `LineSegment` with the provided `LineSegment`.
     public func intersection(with lineSegment: LineSegment) -> CGPoint? {
-        if let intersection = line.intersection(with: lineSegment) {
-            return contains(intersection) ? intersection : nil
-        }
+        if let intersection = line.intersection(with: lineSegment) { return contains(intersection) ? intersection : nil }
         return nil
     }
 
     /// - returns: A new `LineSegment` that is rotated by the provided angle,
     /// around point A.
     public func rotatedAroundA(_ angle: Angle) -> LineSegment {
-        let t = CGAffineTransform(rotationAngle: angle)
-        return self.applying(t, anchorPoint: a)
+        return self.applying(CGAffineTransform(rotationAngle: angle), anchorPoint: a)
     }
 
     /// - returns: A new `LineSegment` that is rotated by the provided angle,
@@ -133,8 +131,7 @@ extension LineSegment: Equatable {
 
 /// True if angle and unit are the same
 public func ===(lhs: LineSegment, rhs: LineSegment) -> Bool {
-    return lhs.a == rhs.a &&
-    lhs.b == rhs.b
+    return lhs.a == rhs.a && lhs.b == rhs.b
 }
 
 /// A LineSegment is Comparable by length.
