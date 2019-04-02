@@ -18,39 +18,16 @@ extension PolygonType {
     }
 }
 
-/**
- *  A `Polygon` is a shape existing of at least three connected
- *  points (and thus of at least three sides).
- */
+/// A `Polygon` is a shape existing of at least three connected points (and thus of at least three sides).
 public struct Polygon: PolygonType {
 
-    public let points: [CGPoint]
-
-    /// The default initializer, returns a `Polygon` given
-    /// the provided array of `CGPoints`. Note that the points
-    /// will be rearranged in such a way that certain
-    /// calculations can be done more easily.
-    /// The initializer asserts on being given at least 3 points.
+    /// The default initializer, returns a `Polygon` given the provided array of `CGPoints`.
     public init(points: [CGPoint]) {
-        assert(points.count > 2, "A polygon should at least have 3 points.")
-
-        //  Store them in "clockwise" direction (sum of edges should be positive)
-        var lastPoint = points.last!
-        var edgeSum: CGFloat = 0.0
-        for point in points {
-            let edge = (lastPoint.x - point.x) * (lastPoint.y + point.y)
-            edgeSum += edge
-            lastPoint = point
-        }
-        let clockwisePoints = (edgeSum >= 0) ? points : points.reversed()
-
-        //  Start at the minXminY point
-        let minXminYPoint = clockwisePoints.reduce(clockwisePoints[0], { (($1.x <= $0.x) && ($1.y <= $0.y)) ? $1 : $0 })
-        let index = clockwisePoints.index(of: minXminYPoint)!
-        let pointsFromIndex = index == 0 ? clockwisePoints : Array((clockwisePoints[index..<clockwisePoints.count] + clockwisePoints[0..<index]))
-
-        self.points = pointsFromIndex
+        assert(points.count >= 3, "A polygon must have at least 3 points.")
+        self.points = points
     }
+
+    public let points: [CGPoint]
 }
 
 public extension Polygon {
@@ -214,20 +191,15 @@ extension Polygon: Shape {
     }
 }
 
-// MARK: Convex Hull
+extension Collection where Element == CGPoint, Index == Int {
 
-extension Collection where Iterator.Element == CGPoint, Index == Int {
-
-    /**
-     *  Any collection of points has a ConvexHull,
-     *  which is a convex polygon that wraps around
-     *  the outer-most points of the collection
-     *  like a rubber band.
-     */
+    /// A convex hull – a convex polygon that wraps around the outer-most 
+    /// points of the collection like a rubber band.
     public var convexHull: Polygon? {
-        guard count > 2 else { return nil }
+        guard self.count >= 3 else { return nil }
+
         // Graham scan:
-        let startPoint = reduce(self[0]) { (minY, p) -> CGPoint in
+        let startPoint = sortedClockwise.reduce(self[0]) { (minY, p) -> CGPoint in
             if p.y < minY.y {
                 return p
             } else if p.y == minY.y {
@@ -260,5 +232,30 @@ extension Collection where Iterator.Element == CGPoint, Index == Int {
         }
 
         return Polygon(points: hullPoints)
+    }
+}
+
+extension Collection where Element == CGPoint {
+
+    /// - see: https://stackoverflow.com/a/6989383/458356
+    internal var sortedClockwise: [CGPoint] {
+        if self.isEmpty { return [] }
+
+        let points: [CGPoint] = Array(self)
+
+        //  Store them in a clockwise direction – the sum of edges should be positive.
+        var lastPoint: CGPoint = points.last!
+        var edgeSum: CGFloat = 0
+
+        for point in points {
+            edgeSum += (lastPoint.x - point.x) * (lastPoint.y + point.y)
+            lastPoint = point
+        }
+
+        let clockwisePoints: [CGPoint] = (edgeSum >= 0) ? points : points.reversed()
+
+        //  Find the minX minY point index.
+        let index: Int = clockwisePoints.indices.reduce(0, { (clockwisePoints[$1].x <= clockwisePoints[$0].x && clockwisePoints[$1].y <= clockwisePoints[$0].y) ? $1 : $0 })
+        return index == 0 ? clockwisePoints : Array(clockwisePoints.suffix(from: index) + clockwisePoints.prefix(index))
     }
 }
