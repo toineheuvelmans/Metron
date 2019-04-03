@@ -12,8 +12,7 @@ extension Comparable {
     /// - returns: true if the value is between the 
     /// provided lower and upper limits.
     public func between(lower: Self, upper: Self) -> Bool {
-        return self >= min(lower, upper) &&
-        self <= max(lower, upper)
+        return self >= min(lower, upper) && self <= max(lower, upper)
     }
 }
 

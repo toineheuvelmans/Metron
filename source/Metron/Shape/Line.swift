@@ -33,8 +33,7 @@ public extension Line {
             definition = .vertical(x: a.x)
         } else {
             let slope = (a.y - b.y) / dx
-            definition = .sloped(slope: slope,
-                yIntercept: (slope * -a.x) + a.y)
+            definition = .sloped(slope: slope, yIntercept: (slope * -a.x) + a.y)
         }
     }
 
@@ -70,17 +69,13 @@ public extension Line {
 
     /// - returns: True if this line is vertical.
     public var isVertical: Bool {
-        if case .vertical(_) = definition {
-            return true
-        }
+        if case .vertical(_) = definition { return true }
         return false
     }
 
     /// - returns: True if this line is horizontal (slope equals zero).
     public var isHorizontal: Bool {
-        if case let .sloped(slope, _) = definition {
-            return abs(slope) == 0.0
-        }
+        if case let .sloped(slope, _) = definition { return abs(slope) == 0.0 }
         return false
     }
 
@@ -97,32 +92,22 @@ public extension Line {
     /// x = (y-b)/m
     public func point(atY y: CGFloat) -> CGPoint? {
         switch definition {
-        case let .sloped(slope, yIntercept):
-            guard slope != 0 else { return nil }
-            return CGPoint(x: (y - yIntercept) / slope, y: y)
-        case let .vertical(x):
-            return CGPoint(x: x, y: y)
+        case let .sloped(slope, yIntercept): return slope == 0 ? nil : CGPoint(x: (y - yIntercept) / slope, y: y)
+        case let .vertical(x): return CGPoint(x: x, y: y)
         }
     }
 
     /// - returns: The value for x on this line where y is 0.
     public var xIntercept: CGFloat? {
         switch definition {
-        case let .sloped(slope, yIntercept):
-            guard slope != 0 else { return nil }
-            return -yIntercept / slope
-        case let .vertical(x):
-            return x
+        case let .sloped(slope, yIntercept): return slope == 0 ? nil : -yIntercept / slope
+        case let .vertical(x): return x
         }
     }
 
     /// - returns: The segment of this line that is between the provided points.
     public func segment(between p1: CGPoint, and p2: CGPoint) -> LineSegment? {
-        let a = point(atX: p1.x) ?? point(atY: p1.y)
-        let b = point(atX: p2.x) ?? point(atY: p2.y)
-        if let a = a, let b = b {
-            return LineSegment(a: a, b: b)
-        }
+        if let a = point(atX: p1.x) ?? point(atY: p1.y), let b = point(atX: p2.x) ?? point(atY: p2.y) { return LineSegment(a: a, b: b) }
         return nil
     }
 
@@ -143,15 +128,12 @@ public extension Line {
     /// Will be nil for parallel lines.
     public func intersection(with line: Line) -> CGPoint? {
         switch (self.definition, line.definition) {
-        case let (.sloped(slope1, yIntercept1),
-                  .sloped(slope2, yIntercept2)):
-            let dSlope = slope1 - slope2
-            guard dSlope != 0.0 else { return nil } // parallel
-            return point(atX: (yIntercept2 - yIntercept1) / dSlope)
-        case let (.vertical(x), .sloped(slope, yIntercept)),
-             let (.sloped(slope, yIntercept), .vertical(x)):
+        case let (.sloped(slope1, yIntercept1), .sloped(slope2, yIntercept2)):
+            return { $0 == 0 ? nil : point(atX: (yIntercept2 - yIntercept1) / $0) }(slope1 - slope2) // Zero slope-diff means lines are parallel.
+        case let (.vertical(x), .sloped(slope, yIntercept)), let (.sloped(slope, yIntercept), .vertical(x)):
             return CGPoint(x: x, y: slope * x + yIntercept)
-        default: return nil
+        default:
+            return nil
         }
     }
 
@@ -159,24 +141,26 @@ public extension Line {
     /// Similar to intersection(with line:…), but this also checks if a
     /// found intersection is also between the line segment's start and end points.
     public func intersection(with lineSegment: LineSegment) -> CGPoint? {
-        let line = lineSegment.line
-        if let intersection = self.intersection(with: line) {
+        if let intersection: CGPoint = self.intersection(with: lineSegment.line) {
             return lineSegment.contains(intersection) ? intersection : nil
-        } else if lineSegment.isVertical, let intersection = point(atX: lineSegment.minX) {
+        } else if lineSegment.isVertical, let intersection: CGPoint = point(atX: lineSegment.minX) {
             return lineSegment.contains(intersection) ? intersection : nil
+        } else {
+            return nil
         }
-        return nil
     }
 
     /// - returns: true if this `Line` runs parallel along the provided `Line`.
     /// Always true for two vertical lines. True for sloped lines with
     /// equal slopes.
     public func isParallel(to line: Line) -> Bool {
-        switch (self.definition, line.definition) {
+        switch (definition, line.definition) {
         case let (.sloped(slope1, _), .sloped(slope2, _)):
             return slope1 == slope2
-        case (.vertical, .vertical): return true
-        default: return false
+        case (.vertical, .vertical):
+            return true
+        default:
+            return false
         }
     }
 
@@ -204,11 +188,11 @@ extension Line.Definition: Equatable {
     public static func ==(lhs: Line.Definition, rhs: Line.Definition) -> Bool {
         switch (lhs, rhs) {
         case let (.sloped(lhsSlope, lhsYIntercept), .sloped(rhsSlope, rhsYIntercept)):
-            return lhsSlope == rhsSlope &&
-            lhsYIntercept == rhsYIntercept
+            return lhsSlope == rhsSlope && lhsYIntercept == rhsYIntercept
         case let (.vertical(lhsX), .vertical(rhsX)):
             return lhsX == rhsX
-        default: return false
+        default:
+            return false
         }
     }
 }

@@ -112,13 +112,15 @@ extension CGRect: Shape {
 }
 
 extension CGRect: PolygonType {
-    public var edgeCount: Int {
-        return 4
-    }
     public var points: [CGPoint] {
         return CoordinateSystem.default.corners.map { self.corner($0) }
     }
+
     public var lineSegments: [LineSegment] {
         return CoordinateSystem.default.edges.map { lineSegment(for: $0) }
+    }
+
+    public var edgeCount: Int {
+        return 4
     }
 }

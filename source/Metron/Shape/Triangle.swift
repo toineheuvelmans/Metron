@@ -266,17 +266,16 @@ public extension Triangle {
 // MARK: Polygon
 
 extension Triangle: PolygonType {
-
-    public var edgeCount: Int {
-        return 3
-    }
-
     public var points: [CGPoint] {
         return vertices.asArray
     }
 
     public var lineSegments: [LineSegment] {
         return sides.asArray
+    }
+
+    public var edgeCount: Int {
+        return 3
     }
 }
 

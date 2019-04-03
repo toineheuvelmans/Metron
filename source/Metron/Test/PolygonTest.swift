@@ -25,5 +25,16 @@ internal class PolygonSpec: Spec {
 
             expect(polygon.lineSegments) == segments
         }
+
+        it("can check if self intersecting") {
+            expect(Metron.Polygon(points: Array([(0, 0), (10, 5), (10, 0), (0, 5)])).isSelfIntersecting) == true
+            expect(Metron.Polygon(points: Array([(0, 0), (10, 0), (10, 5), (0, 5)])).isSelfIntersecting) == false
+        }
+
+        it("can calculate area") {
+            expect(Metron.Polygon(points: Array([(0, 0), (10, 0), (10, 5)])).area) == 25
+            expect(Metron.Polygon(points: Array([(0, 0), (10, 0), (10, 5), (0, 5)])).area) == 50
+            expect(Metron.Polygon(points: Array([(0, 0), (10, 5), (10, 0), (0, 5)])).area.isNaN) == true // Self-intersecting polygon area is not available.
+        }
     }
 }

@@ -70,15 +70,17 @@ extension Square: Shape {
 }
 
 extension Square: PolygonType {
-    public var edgeCount: Int {
-        return 4
-    }
     public var points: [CGPoint] {
         let rect = self.rect
         return CoordinateSystem.default.corners.map { rect.corner($0) }
     }
+
     public var lineSegments: [LineSegment] {
         return rect.lineSegments
+    }
+
+    public var edgeCount: Int {
+        return 4
     }
 }
 

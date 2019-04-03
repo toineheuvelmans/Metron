@@ -16,6 +16,7 @@
 		17FD051CBBE0D4CA2EE9CA37 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD04272A5CBE2F8A2CBACD /* Corner.swift */; };
 		17FD052C5F492326F58ABAEC /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD09361D239018E7F80B7D /* CoordinateSystem.swift */; };
 		17FD0567DE161BDE7DAB0C69 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD06098D71B0C119723C87 /* Square.swift */; };
+		17FD062264AE87E2E1DBE6DB /* LineSegmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D6FD911DB09F9457BC5 /* LineSegmentTest.swift */; };
 		17FD06C2F9146A204B8A8701 /* CornerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD054EC3163EA3653332A2 /* CornerPosition.swift */; };
 		17FD06CB597B4E0E923665DD /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD020AD14A77B2F7CA527B /* LineSegment.swift */; };
 		17FD07852E97C5E2F1F8A43B /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F6D6A6B8F4C0619887D /* CGVector.swift */; };
@@ -98,6 +99,7 @@
 		17FD0AFB0E6B9F7C1F9EA618 /* Demo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Demo.plist; sourceTree = "<group>"; };
 		17FD0BA0752204C91ADB3C25 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		17FD0C776D9B44C3484681CC /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		17FD0D6FD911DB09F9457BC5 /* LineSegmentTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegmentTest.swift; sourceTree = "<group>"; };
 		17FD0DC842E479E8FF85A43B /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		17FD0DDBF7AADC02B5A70AD5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		17FD0DDE6E505A3222304E75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 			children = (
 				17FD0694950A7240F4CCDCC8 /* PolygonTest.swift */,
 				17FD07381F6A003FF9433268 /* Test.swift */,
+				17FD0D6FD911DB09F9457BC5 /* LineSegmentTest.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			files = (
 				17FD049E93AC67C10A713A9E /* Test.swift in Sources */,
 				E62C8DE12210782700E0A783 /* PolygonTest.swift in Sources */,
+				17FD062264AE87E2E1DBE6DB /* LineSegmentTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

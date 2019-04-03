@@ -1,20 +1,23 @@
 import CoreGraphics
 
-/**
- *  Represents any shape that can be defined as a `Polygon`,
- *  i.e. a number (> 2) of connected points.
- */
+/// Represents any shape that can be defined as a `Polygon`, i.e., where the number of connected points if >= 3.
 public protocol PolygonType: Shape {
-    var edgeCount: Int { get }
     var points: [CGPoint] { get }
     var lineSegments: [LineSegment] { get }
+
+    /// The number of edges the polygon has.
+    var edgeCount: Int { get }
 }
 
 
 extension PolygonType {
-    /// - returns: A `Polygon` representing this type.
+    /// - returns: A `Polygon` representing this type. Todo: Deprecate and use convenience Polygon init.
     public var polygon: Polygon {
         return Polygon(points: points)
+    }
+
+    public var edgeCount: Int {
+        return self.points.count
     }
 }
 
@@ -32,12 +35,9 @@ public struct Polygon: PolygonType {
 
 public extension Polygon {
 
-    /// Initializes a `Polygon` given a number of `LineSegments`.
-    /// The first lineSegment is taken as starting point,
-    /// from which a connecting lineSegment is saught,
-    /// until all lineSegments are connected.
-    /// Then the default initializer is called, passing
-    /// all points of the connected lineSegments.
+    /// Initializes a `Polygon` given a number of `LineSegments`. The first lineSegment is taken as starting 
+    /// point, from which a connecting lineSegment is sought, until all lineSegments are connected. Then the default
+    /// initializer is called, passing all points of the connected lineSegments.
     public init?(lineSegments: [LineSegment]) {
         var remainingLineSegments = lineSegments
         var points = [CGPoint]()
@@ -59,29 +59,22 @@ public extension Polygon {
 
     /// The individual line segments between consecutive points of this polygon.
     public var lineSegments: [LineSegment] {
-        var lineSegments = [LineSegment]()
-        (0..<edgeCount).forEach { pointIndex in
-            let point = points[pointIndex]
-            let nextPoint = points[(pointIndex + 1) % edgeCount]
-            lineSegments.append(LineSegment(a: point, b: nextPoint))
-        }
-        return lineSegments
-    }
-
-    /// The number of edges of this polygon.
-    public var edgeCount: Int {
-        return points.count
+        // Todo: Must be cached.
+        return zip(points, points.suffix(from: 1) + points.prefix(1)).map({ LineSegment(a: $0, b: $1) })
     }
 
     /// - returns: True if line segments of this polygon intersect each other.
     public var isSelfIntersecting: Bool {
-        //  Might be implemented more efficiently
-        var lineSegments = self.lineSegments
+
+        //  Todo: Might be implemented more efficiently…
+        var lineSegments: [LineSegment] = self.lineSegments
+
         while let segment = lineSegments.popLast() {
-            if let _ = lineSegments.first(where: { $0.intersection(with: segment) != nil }) {
+            if lineSegments.contains(where: { $0.intersection(with: segment) != nil && !$0.connects(with: segment) }) {
                 return true
             }
         }
+
         return false
     }
 
@@ -107,7 +100,6 @@ public extension Polygon {
 }
 
 extension Polygon: Drawable {
-
     public var path: CGPath? {
         let path = CGMutablePath()
         path.addLines(between: self.points)
