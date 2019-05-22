@@ -129,8 +129,14 @@ public extension Line {
     /// - returns: True when the provided point is on this `Line`.
     /// - note: An error margin of 1e-12 is allowed.
     public func contains(_ point: CGPoint) -> Bool {
-        guard let pointAtX = self.point(atX: point.x) else { return false }
-        return point.distance(to: pointAtX) <= 1e-12
+        switch definition {
+        case .sloped:
+            guard let pointAtX = self.point(atX: point.x) else { return false }
+            return point.distance(to: pointAtX) <= 1e-12
+
+        case let .vertical(x):
+            return point.x == x
+        }
     }
 
     /// - returns: The intersection of this `Line` with the provided `Line`.
