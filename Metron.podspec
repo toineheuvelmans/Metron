@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
   spec.name             = 'Metron'
   spec.summary          = 'Gemeometry, simplified.'
   spec.description      = 'Metron is a comprehensive collection of geometric functions and types that extend the 2D geometric primitives provided by CoreGraphics.'
-  spec.version          = '1.0.3'
+  spec.version          = '1.0.4'
   spec.source           = { :git => 'https://github.com/toineheuvelmans/Metron.git', :tag => spec.version.to_s }
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
 
